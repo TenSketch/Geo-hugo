@@ -1,0 +1,9 @@
+baseURL = "https://www.geotattoos.com/"
+languageCode = "en-us"
+title = "Geo Tattoos | Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products"
+theme = "tattoo-shop-hugo-theme"
+[params]
+description = "Geo tattoos, owned by George is Chennai's one of the top most tattoos shops. Services are Tattoo Making, Tattoo Removal, Tattoo Training. Also sells Tattoo Products"
+keywords = "Tattoo shops in Chennai, Tattoo shop in Chennai, Tattoo in Chennai, Best Tattoo shop in Chennai, Low cost Tattoo shops in Chennai, Tattoo Making, Tattoo Removal, Tattoo Training, Tattoo Products"
+author = "TenSketch"
+og_image = "/images/ogimage.png"

@@ -1,0 +1,23 @@
+<script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/lazysizes.min.js"></script>
+    <!-- slider-caoursel -->
+    <script>$('#carouselHacked').carousel();
+    </script>
+    <script src="fancybox-2.1.7/jquery.fancybox.pack.js"></script>
+    <!-- counter -->
+    <script>
+        $('.counter-count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 12000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
