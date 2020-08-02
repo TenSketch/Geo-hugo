@@ -603,20 +603,35 @@ html,body {
     transition: 0.2s;
     line-height: 68px;
   }
+  .tm-bg {
+    background: url("/images/parallax.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.tm-bg h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    background-color: #00000067;
+    padding: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    margin: auto;
+}
   /* contact page */
   .contact-new {
-    background-image: url("/images/parallax.jpg");
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.829);
   }
   
   .form-control {
     margin-bottom: 20px;
     height: 50px;
   }
-  
+ 
   .btn {
     display: inline-block;
     margin: 0;
@@ -649,7 +664,8 @@ html,body {
     margin-bottom: 1rem;
     letter-spacing: 1px;
     font-size: 15px;
-    text-transform: unset
+    text-transform: unset;
+    color: #fff!important
 
   }
   /* map */
@@ -671,7 +687,25 @@ html,body {
   .text-white {      
     color: #fff;
   }
-  
+  .center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .center-box img{
+    transition: filter .25s ease-in-out;
+  }
+  .center-box img:hover{
+    filter: drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.74));
+  }
+  .img-fluid{
+    max-width: 100%;
+    height: 100px;
+  }
+.fsghtg {
+  color: #fff!important;
+}
   .feedback-new {
     background-image: url("/images/feed.jpg");
     background-attachment: fixed;
@@ -905,4 +939,7 @@ padding:5px;
 #style-3::-webkit-scrollbar-thumb
 {
   background-color: #000000
+}
+.my-5{
+  margin: 5rem auto;
 }

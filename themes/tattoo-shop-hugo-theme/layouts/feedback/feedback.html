@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{partial "head" .}}
+
+</head>
+
+<body>
+    {{partial "header" .}}
+    <section class="tm-bg">
+        <div class="container">
+            <h1 class="text-center">{{.Title}}</h1>
+        </div>
+    </section>
+    <section style="background: #424242;">
+        <div class="container ptb-5">
+            <div class="center-box">
+                <a href="https://g.page/geotattooschennai/review?rc" title="click to send a google review">
+                    <img src="/images/review-us-on-google-image.png" class="img-fluid" alt="review-us-on-google-image">
+                </a>
+            </div>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-17a1f603-44f5-4f39-a6d4-13c65c575509"></div>
+        </div>
+    </section>
+
+    {{partial "footer" .}}
+    {{partial "scripts" .}}
+    {{- partial "fancyjs.html" . -}}
+</body>
+
+</html>

@@ -27,16 +27,71 @@
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/fancybox-2.1.7/jquery.fancybox.css" media="screen">
-<link rel="stylesheet" href="/css/fontawesome.css">
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<style>
+    .thumb {
+        margin-bottom: 30px;
+    }
+
+    img.zoom {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: all .3s ease-in-out !important;
+        -webkit-transition: all .3s ease-in-out !important;
+
+    }
+
+    img.zoom:hover {
+        -webkit-transform: scale(1.2) !important;
+        transform: scale(1.2) !important;
+    }
+
+
+  
+    .masonry {
+        columns: 2;
+        column-gap: 10px;
+    }
+
+    .masonry-item {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 5px;
+    }
+
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+        .masonry {
+            columns: 3;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .masonry {
+            columns: 4;
+        }
+    }
+
+    .masonry-item {
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.356));
+        transition: filter .25s ease-in-out;
+    }
+
+    .masonry-item:hover {
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+    }
+</style></head>
 <body>
 <nav class="navbar-fixed-top tn">
     <div class="container">
         <div class="nav navbar-top">
             <div class="col-md-6 col-sm-6 col-xs-6 pull-left" style="padding-left:0px">
-                <a class="btn1" href="tel:+919884211116"><i class="fas fa-mobile-alt faph"></i>91-9884211116</a>
+                <a class="btn1" href="tel:+919884211116"><i class="fas fa-mobile faph"></i>91-9884211116</a>
                 <a class="btn1" href="tel:04426211116"><i class="fas fa-phone-square faph"></i>044-26211116</a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 nav-pad-r" style="text-align:right;">
@@ -73,14 +128,14 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false">Gallery<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="Tattoo_Pictures.php">Tattoo Making</a></li>
-                        <li><a href="Tattoo_Removal_Pictures.php">Tattoo Removal</a></li>
-                        <li><a href="Tattoo_Training_Pictures.php">Tattoo Training</a></li>
+                        <li><a href="https://www.geotattoos.com/gallery/tattoo-making">Tattoo Making</a></li>
+                        <li><a href="https://www.geotattoos.com/gallery/tattoo-removal">Tattoo Removal</a></li>
+                        <li><a href="https://www.geotattoos.com/gallery/tattoo-training">Tattoo Training</a></li>
                     </ul>
                 </li>
-                <li><a href="feedback.php">Feedback</a></li>
-                <li><a href="https://www.geotattoos.com/about/geo_tattoos/">About us</a></li>
-                <li><a href="contact.php">Contact us</a></li>
+                <li><a href="https://www.geotattoos.com/feedback">Feedback</a></li>
+                <li><a href="https://www.geotattoos.com/about-us">About us</a></li>
+                <li><a href="https://www.geotattoos.com/contact-us">Contact us</a></li>
             </ul>
         </div>
     </div>
@@ -109,67 +164,67 @@
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s2.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s2.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text down">
                 99% effective portrait tattoos
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s3.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s3.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text top">
                 Fine accuracy and precision
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s4.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s4.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text down">
                 Get tattoos of any symbol and shape
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s5.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s5.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text top">
                 Perfect tattoo reworks
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s6.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s6.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text down">
                 Jaw dropping text tattoos
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s7.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s7.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text center">
                 98% effective tattoo removal
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s8.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s8.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text down">
                 Mini tattoos
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s9.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s9.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text center">
                 Tattoo training courses
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s10.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s10.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text down">
                 George has trained more than 30 artists
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s11.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s11.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text top">
                 Eye catching cover-up tattoos
             </div>
         </div>
         <div class="item">
-            <img data-src="/images/s12.jpg" class="lazyload" alt="Geo carousel pic">
+            <img src="/images/s12.jpg" class="lazyload" alt="Geo carousel pic">
             <div class="slider_text top">
                 Cover-up tattoos
             </div>
@@ -190,7 +245,7 @@
         <h1>SERVICES</h1>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" data-src="/images/Making-tattoo.jpg" alt="Tattoo making pic">
+                <img class="fluid1 lazyload" src="/images/Making-tattoo.jpg" alt="Tattoo making pic">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
                 <h2>Tattoo Making</h2>
@@ -225,13 +280,13 @@
                     pigment color. A tattoo removal process may take up to 6 months.</p>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" data-src="/images/Tattoo-Removal.jpg" alt="Tattoo making pic">
+                <img class="fluid1 lazyload" src="/images/Tattoo-Removal.jpg" alt="Tattoo making pic">
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" data-src="/images/Training-tattoo.jpg" alt="Tattoo making pic">
+                <img class="fluid1 lazyload" src="/images/Training-tattoo.jpg" alt="Tattoo making pic">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
                 <h2>Tattoo Training</h2>
@@ -265,7 +320,7 @@
                     </ol>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload tabt" data-src="/images/2-training-tattoo.jpg" alt="Tattoo making pic">
+                <img class="fluid1 lazyload tabt" src="/images/2-training-tattoo.jpg" alt="Tattoo making pic">
             </div>
         </div>
     </div>
@@ -277,20 +332,20 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Basic</h3>
-                <img class="fluid2 lazyload" data-src="/images/basic.webp" alt="Basic tattoo tool kit pic">
+                <img class="fluid2 lazyload" src="/images/basic.webp" alt="Basic tattoo tool kit pic">
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Intermediate</h3>
-                <img class="fluid2 lazyload" data-src="/images/intermediate.webp"
+                <img class="fluid2 lazyload" src="/images/intermediate.webp"
                     alt="Intermediate tattoo tool kit pic">
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Machine</h3>
-                <img class="fluid2 lazyload" data-src="/images/machine.webp" alt="Machine tattoo tool kit pic">
+                <img class="fluid2 lazyload" src="/images/machine.webp" alt="Machine tattoo tool kit pic">
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Professional</h3>
-                <img class="fluid2 lazyload" data-src="/images/professional.webp"
+                <img class="fluid2 lazyload" src="/images/professional.webp"
                     alt="Professional tattoo tool kit pic">
             </div>
         </div>
@@ -345,93 +400,102 @@
 
 <div class="container ptb-5">
     <h1 class="text-center td mb-5">OUR PORTFOLIO</h1>
-    <div class="row" style="margin:0px">
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" class="fancybox" rel="group"
+    <div class="row thumb">
+
+
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" class="fancybox" rel="group"
+    </div>
+    <div class="row thumb">
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" class="fancybox" rel="group"
+    </div>
+    <div class="row thumb">
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" class="fancybox" rel="group"
+        <div class="col-lg-3 col-md-4 col-xs-4">
+            <a href="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" data-fancybox="gallery"
                 aria-label="Geo-portfolio">
-                <img data-src="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" class="zoom lazyload"
+                <img src="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" class="zoom lazyload"
                     alt="Geo portfolio">
             </a>
         </div>
+    </div>
+    <div class="row">
+
         <div class="col-lg-12 col-md-12 col-xs-12">
-            <a href="Tattoo_Pictures.php">
+            <a href="https://www.geotattoos.com/gallery/tattoo-making">
                 <button class="btn mtmob-2" id="submit" type="submit" name="submit" value="Submit">View
                     more</button>
             </a>
@@ -445,28 +509,28 @@
             <h1>Geo Numbers</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img data-src="/images/tatoo-machine.png" class="img-counter lazyload" alt="tattoo making icon">
+                    <img src="/images/tatoo-machine.png" class="img-counter lazyload" alt="tattoo making icon">
                     <div class="employees">
                         <p class="counter-count">10000</p><i class="fas fa-plus fa-2x"></i>
                         <p class="count-p">Tattoos made</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img data-src="/images/erase-text.png" class="img-counter lazyload" alt="tattoo removal icon">
+                    <img src="/images/erase-text.png" class="img-counter lazyload" alt="tattoo removal icon">
                     <div class="customer">
                         <p class="counter-count">1000</p><i class="fas fa-plus fa-2x"></i>
                         <p class="count-p">Tattoos removed</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img data-src="/images/training.png" class="img-counter lazyload" alt="tattoo training icon">
+                    <img src="/images/training.png" class="img-counter lazyload" alt="tattoo training icon">
                     <div class="design">
                         <p class="counter-count">30</p><i class="fas fa-plus fa-2x"></i>
                         <p class="count-p">Tattoo artists trained</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img data-src="/images/pedal.png" class="img-counter lazyload" alt="tattoo products icon">
+                    <img src="/images/pedal.png" class="img-counter lazyload" alt="tattoo products icon">
                     <div class="order">
                         <p class="counter-count">100</p><i class="fas fa-plus fa-2x"></i>
                         <p class="count-p">Tattoo products</p>
@@ -544,32 +608,31 @@
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                 <h5 class="footcenter">Get started</h5>
                 <ul>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="index.html">Home</a>
+                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/">Home</a>
                     </li>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/about/geo_tattoos/">About
+                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/about-us">About
                             us</a></li>
                     <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a
-                            href="Tattoo_Pictures.php">Gallery</a></li>
+                            href="https://www.geotattoos.com/gallery/tattoo-making">Gallery</a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                 <h5 class="footcenter">Reach us</h5>
                 <ul>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="contact.php">Contact
+                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/contact-us">Contact
                             us</a></li>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="feedback.php">Send
+                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/feedback">Send
                             feedback</a></li>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a
-                            href="bookappointment.html">Book appointment</a></li>
+                    
                 </ul>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                 <h5 class="footcenter">Other gallery</h5>
                 <ul>
                     <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a
-                            href="Tattoo_Removal_Pictures.php">Tattoo Removal</a></li>
+                            href="https://www.geotattoos.com/gallery/tattoo-removal">Tattoo Removal</a></li>
                     <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a
-                            href="Tattoo_Training_Pictures.php">Tattoo Training</a></li>
+                            href="https://www.geotattoos.com/gallery/tattoo-training">Tattoo Training</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -581,21 +644,18 @@
                         <i class="fa fa-angle-double-right"></i>&nbsp;<b>Head Office:</b>
                     </li>
                     <li class="footcenter pl-20">
-                        <a href="https://goo.gl/maps/GfWkdU3ZiKm" target="_blank" rel="noopener"
+                        <a href="https://g.page/geotattooschennai" target="_blank" rel="noopener"
                             aria-label="Geo Tattoos head office address">Roundtana, Anna Nagar</a>
                     </li>
                     <li class="footcenter">
                         <i class="fa fa-angle-double-right"></i>&nbsp;<b>Branches:</b>
                     </li>
                     <li class="footcenter pl-20">
-                        <a href="https://goo.gl/maps/JjAVi9pdViz" target="_blank" rel="noopener"
+                        <a href="https://goo.gl/maps/HH2TgWjTZCKsZDxt5" target="_blank" rel="noopener"
                             aria-label="Geo Tattoos Shanthi colony address">Shanthi Colony, Anna Nagar</a>
                     </li>
                     <li class="footcenter pl-20">Kellys</li>
-                    <li class="footcenter pl-20">
-                        <a href="https://g.co/kgs/3WX2YY" target="_blank" rel="noopener"
-                            aria-label="Geo Tattoos Arumbakkam address">Arumbakkam</a>
-                    </li>
+                    <li class="footcenter pl-20">Arumbakkam</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pl-0">
@@ -621,13 +681,12 @@
                     aria-label="website developer link" target="_blank" rel="noopener">TenSketch</a></p>
         </div>
     </div>
-</footer><script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/lazysizes.min.js"></script>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
     
     <script>$('#carouselHacked').carousel();
     </script>
-    <script src="fancybox-2.1.7/jquery.fancybox.pack.js"></script>
     
     <script>
         $('.counter-count').each(function () {
@@ -642,6 +701,11 @@
             });
         });
     </script>
+    <script>
+        $('#link').hover(function () {
+          $('#title').text($('#link').attr('title'));
+        });
+      </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
-</html></body>
 </html>

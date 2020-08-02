@@ -1,10 +1,9 @@
-<script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/lazysizes.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
     <!-- slider-caoursel -->
     <script>$('#carouselHacked').carousel();
     </script>
-    <script src="fancybox-2.1.7/jquery.fancybox.pack.js"></script>
     <!-- counter -->
     <script>
         $('.counter-count').each(function () {
@@ -19,5 +18,8 @@
             });
         });
     </script>
-</body>
-</html>
+    <script>
+        $('#link').hover(function () {
+          $('#title').text($('#link').attr('title'));
+        });
+      </script>

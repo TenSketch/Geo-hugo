@@ -3,17 +3,287 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.geotattoos.com/about/geo_tattoos/</loc>
-    <lastmod>2020-07-14T13:50:23+05:30</lastmod>
+    <loc>https://www.geotattoos.com/feedback/</loc>
+    <lastmod>2020-08-02T14:44:48+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.geotattoos.com/about/</loc>
-    <lastmod>2020-07-14T13:50:23+05:30</lastmod>
+    <loc>https://www.geotattoos.com/contact-us/</loc>
+    <lastmod>2020-08-02T14:44:39+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://www.geotattoos.com/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-1/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-10/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-11/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-12/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-13/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-14/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-15/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-16/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-2/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-3/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-4/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-5/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-6/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-7/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-8/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/pics-tm/geo_tattoos-making-9/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-1/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-10/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-11/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-12/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-13/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-2/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-3/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-4/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-5/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-6/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-7/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-8/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/pics-tr/geo_tattoos-removal-9/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-1/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-10/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-11/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-12/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-13/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-14/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-15/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-16/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-2/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-3/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-4/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-5/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-6/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-7/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-8/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/pics-tt/geo_tattoos-training-9/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/tags/picstm/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/tags/picstrm/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/tags/picsttr/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/tags/</loc>
+    <lastmod>2020-08-01T18:02:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-removal/</loc>
+    <lastmod>2020-07-25T15:45:55+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-training/</loc>
+    <lastmod>2020-07-25T15:45:55+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/gallery/tattoo-making/</loc>
+    <lastmod>2020-07-25T15:45:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/about-us/</loc>
+    <lastmod>2020-07-14T13:50:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/book-appointment/</loc>
     <lastmod>2020-07-14T13:50:23+05:30</lastmod>
   </url>
   
@@ -22,7 +292,7 @@
   </url>
   
   <url>
-    <loc>https://www.geotattoos.com/tags/</loc>
+    <loc>https://www.geotattoos.com/gallery/</loc>
   </url>
   
 </urlset>
