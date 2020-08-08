@@ -295,4 +295,12 @@
     <loc>https://www.geotattoos.com/gallery/</loc>
   </url>
   
+  <url>
+    <loc>https://www.geotattoos.com/test/tm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.geotattoos.com/test/</loc>
+  </url>
+  
 </urlset>

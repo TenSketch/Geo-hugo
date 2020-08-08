@@ -4,7 +4,7 @@
 <head>
     {{partial "head" .}}
     {{- partial "fancycss.html" . -}}
-   
+
 </head>
 
 <body>
@@ -19,13 +19,25 @@
             {{range $index, $val := .Site.Taxonomies.tags.picstm}}
             <div class="masonry-item">
                 <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
-                    <img src="{{.Page.Params.image}}" class="masonry-content" alt="{{.Name}}">
+                    <img src="{{.Page.Params.image}}" class="masonry-content lazyload" alt="{{.Name}}">
                 </a>
             </div>
             {{end}}
         </div>
     </div>
-    
+    <div class="container my-5">
+        <div class="masonry">
+            {{range .Resources.Match "gallerytm/*" -}}
+            {{ $image := .}}
+            <div class="masonry-item">
+                <a data-fancybox="gallery" href="{{.RelPermalink}}" aria-label="{{.Name}}">
+                    <img src="{{ $image.RelPermalink }}" class="masonry-content lazyload" src="{{ $image.RelPermalink }}"  alt="{{.Name}}">
+                </a>
+            </div>
+            {{- end }}
+        </div>
+    </div>
+
     {{partial "footer" .}}
     {{partial "scripts" .}}
     {{- partial "fancyjs.html" . -}}
