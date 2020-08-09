@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
@@ -58,7 +57,7 @@
 
     .masonry {
         columns: 2;
-        column-gap: 10px;
+        column-gap: 5px;
     }
 
     .masonry-item {
@@ -69,74 +68,40 @@
 
     @media only screen and (max-width: 1023px) and (min-width: 768px) {
         .masonry {
-            columns: 3;
+            columns: 4;
         }
     }
 
     @media only screen and (min-width: 1024px) {
         .masonry {
-            columns: 4;
+            columns: 6;
         }
     }
 
-    .masonry-item,
-    .masonry-content {
+    .masonry-item, .masonry-content {
         border-radius: 4px;
         overflow: hidden;
     }
-
-    .masonry-item {
-        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
-        transition: filter .25s ease-in-out;
+    .masonry-content{
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        object-fit: cover;
+        transition: all .3s ease-in-out !important;
+        -webkit-transition: all .3s ease-in-out !important;
     }
 
-    .masonry-item:hover {
-        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+    .masonry-content:hover {
+        -webkit-transform: scale(1.2) !important;
+        transform: scale(1.2) !important;
     }
-</style><style>
-        .tm-bg {
-            background: url("/images/parallax.jpg") no-repeat fixed center;
-            background-size: cover;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-        }
 
-        .tm-bg h1 {
-            font-size: 5rem;
-            text-transform: uppercase;
-            background-color: #00000067;
-            padding: 1rem;
-            border-radius: 5px;
-            width: fit-content;
-            position: relative;
-            display: flex;
-            margin: auto;
-        }
-    </style>
-</head>
 
+    
+</style></head>
 <body>
     
-<nav class="navbar-fixed-top tn">
-    <div class="container">
-        <div class="nav navbar-top">
-            <div class="col-md-6 col-sm-6 col-xs-6 pull-left" style="padding-left:0px">
-                <a class="btn1" href="tel:+919884211116"><i class="fas fa-mobile faph"></i>91-9884211116</a>
-                <a class="btn1" href="tel:04426211116"><i class="fas fa-phone-square faph"></i>044-26211116</a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 nav-pad-r" style="text-align:right;">
-                <a href="https://www.facebook.com/geotattooschennai/" target="_blank" rel="noopener"
-                    aria-label="Geo Tattoos facebook page"><i class="fab fa-facebook fa-size"></i></a>
-                <a href="https://www.youtube.com/user/Geotattoos" target="_blank" rel="noopener"
-                    aria-label="Geo Tattoos youtube page" class="pad-last-child"><i
-                        class="fab fa-youtube fa-size"></i></a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
     <div class="container">
         
         <div class="navbar-header">
@@ -165,8 +130,24 @@
                     </ul>
                 </li>
                 <li><a href="https://www.geotattoos.com/feedback">Feedback</a></li>
-                <li><a href="https://www.geotattoos.com/about-us">About us</a></li>
+                <li><a href="https://www.geotattoos.com/about_us">About us</a></li>
                 <li><a href="https://www.geotattoos.com/contact-us">Contact us</a></li>
+                <li><a href="https://www.facebook.com/geotattooschennai/" target="_blank" rel="noopener"
+                        aria-label="Geo Tattoos facebook page"><i class="fab fa-facebook fa-size"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/user/Geotattoos" target="_blank" rel="noopener"
+                        aria-label="Geo Tattoos youtube page" class="pad-last-child"><i
+                            class="fab fa-youtube fa-size"></i></a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">📞<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tel:+919884211116" title="tap to call mobile"
+                                aria-label="tap to call mobile">📱9884211116</a></li>
+                        <li><a href="tel:04426211116" title="tap to call landline"
+                                aria-label="tap to call landline">📞04426211116</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -180,86 +161,72 @@
         <div class="masonry">
             
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-1.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-1.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-1.jpg" aria-label="gallery/Geo_Tattoos_Removal-1.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-1.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-1.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-10.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-10.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-10.jpg" aria-label="gallery/Geo_Tattoos_Removal-10.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-10.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-10.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-11.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-11.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-11.jpg" aria-label="gallery/Geo_Tattoos_Removal-11.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-11.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-11.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-12.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-12.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-12.jpg" aria-label="gallery/Geo_Tattoos_Removal-12.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-12.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-12.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-13.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-13.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-13.jpg" aria-label="gallery/Geo_Tattoos_Removal-13.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-13.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-13.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-2.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-2.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-2.jpg" aria-label="gallery/Geo_Tattoos_Removal-2.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-2.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-2.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-3.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-3.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-3.jpg" aria-label="gallery/Geo_Tattoos_Removal-3.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-3.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-3.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-4.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-4.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-4.jpg" aria-label="gallery/Geo_Tattoos_Removal-4.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-4.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-4.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-5.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-5.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-5.jpg" aria-label="gallery/Geo_Tattoos_Removal-5.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-5.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-5.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-6.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-6.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-6.jpg" aria-label="gallery/Geo_Tattoos_Removal-6.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-6.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-6.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-7.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-7.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-7.jpg" aria-label="gallery/Geo_Tattoos_Removal-7.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-7.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-7.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-8.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-8.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-8.jpg" aria-label="gallery/Geo_Tattoos_Removal-8.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-8.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-8.jpg">
                 </a>
             </div>
-            
             <div class="masonry-item">
-                <a data-fancybox="gallery" href="/images/gallery/pics-tr/Geo_Tattoos_Removal-9.jpg" aria-label="Geo_Tatoo removal pictures1">
-                    <img src="/images/gallery/pics-tr/Geo_Tattoos_Removal-9.jpg" class="masonry-content" alt="Geo_Tatoo removal pictures1">
+                <a data-fancybox="gallery" href="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-9.jpg" aria-label="gallery/Geo_Tattoos_Removal-9.jpg">
+                    <img src="/gallery/tattoo-removal/gallery/Geo_Tattoos_Removal-9.jpg" class="masonry-content lazyload" alt="gallery/Geo_Tattoos_Removal-9.jpg">
                 </a>
             </div>
-            
         </div>
     </div>
-    
     <footer id="myFooter" class="pt-3">
     <div class="container">
         <div class="row">
@@ -268,7 +235,7 @@
                 <ul>
                     <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/">Home</a>
                     </li>
-                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/about-us">About
+                    <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a href="https://www.geotattoos.com/about_us">About
                             us</a></li>
                     <li class="footcenter"><i class="fa fa-angle-double-right"></i>&nbsp;<a
                             href="https://www.geotattoos.com/gallery/tattoo-making">Gallery</a></li>
@@ -367,5 +334,4 @@
       </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
-
 </html>

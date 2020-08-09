@@ -6,9 +6,37 @@
     <description>Recent content in Galleries on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sat, 25 Jul 2020 15:45:55 +0530</lastBuildDate>
     
 	<atom:link href="https://www.geotattoos.com/gallery/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tattoo Removal</title>
+      <link>https://www.geotattoos.com/gallery/tattoo-removal/</link>
+      <pubDate>Sat, 25 Jul 2020 15:45:55 +0530</pubDate>
+      
+      <guid>https://www.geotattoos.com/gallery/tattoo-removal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tattoo Training</title>
+      <link>https://www.geotattoos.com/gallery/tattoo-training/</link>
+      <pubDate>Sat, 25 Jul 2020 15:45:55 +0530</pubDate>
+      
+      <guid>https://www.geotattoos.com/gallery/tattoo-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tattoo making gallery</title>
+      <link>https://www.geotattoos.com/gallery/tattoo-making/</link>
+      <pubDate>Sat, 25 Jul 2020 15:45:44 +0530</pubDate>
+      
+      <guid>https://www.geotattoos.com/gallery/tattoo-making/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

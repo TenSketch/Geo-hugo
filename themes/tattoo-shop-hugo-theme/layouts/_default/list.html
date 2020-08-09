@@ -195,8 +195,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Intermediate</h3>
-                <img class="fluid2 lazyload" src="/images/intermediate.webp"
-                    alt="Intermediate tattoo tool kit pic">
+                <img class="fluid2 lazyload" src="/images/intermediate.webp" alt="Intermediate tattoo tool kit pic">
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Machine</h3>
@@ -204,8 +203,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mobmar">
                 <h3>Professional</h3>
-                <img class="fluid2 lazyload" src="/images/professional.webp"
-                    alt="Professional tattoo tool kit pic">
+                <img class="fluid2 lazyload" src="/images/professional.webp" alt="Professional tattoo tool kit pic">
             </div>
         </div>
         <div class="row">
@@ -259,97 +257,16 @@
 <!-- gallery-new-fancybox-->
 <div class="container ptb-5">
     <h1 class="text-center td mb-5">OUR PORTFOLIO</h1>
-    <div class="row thumb">
+    <div class="row">
 
+        {{range $index, $val := .Site.Taxonomies.tags.homegal}}
+        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
+            <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
+                <img src="{{.Page.Params.image}}" class="zoom lazyload" alt="{{.Name}}">
+            </a>
+        </div>
+        {{- end }}
 
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_1.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_2.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_3.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_4.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-    </div>
-    <div class="row thumb">
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_5.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_6.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_7.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_8.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-    </div>
-    <div class="row thumb">
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_9.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_10.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_11.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-            <a href="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" data-fancybox="gallery"
-                aria-label="Geo-portfolio">
-                <img src="/images/gallery/home_gallery/GeoTattoos_Making_12.jpg" class="zoom lazyload"
-                    alt="Geo portfolio">
-            </a>
-        </div>
     </div>
     <div class="row">
 
@@ -460,10 +377,5 @@
         </div>
     </div>
 </section>
-
-{{end}}
-
-{{define "gallery"}}
-{ {< foldergallery src="images" >} }
 
 {{end}}
