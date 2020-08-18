@@ -1,322 +1,114 @@
 {{define "content"}}
 <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselHacked" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselHacked" data-slide-to="1"></li>
-        <li data-target="#carouselHacked" data-slide-to="2"></li>
-        <li data-target="#carouselHacked" data-slide-to="3"></li>
-        <li data-target="#carouselHacked" data-slide-to="4"></li>
-        <li data-target="#carouselHacked" data-slide-to="5"></li>
-        <li data-target="#carouselHacked" data-slide-to="6"></li>
-        <li data-target="#carouselHacked" data-slide-to="7"></li>
-        <li data-target="#carouselHacked" data-slide-to="8"></li>
-        <li data-target="#carouselHacked" data-slide-to="9"></li>
-        <li data-target="#carouselHacked" data-slide-to="10"></li>
-        <li data-target="#carouselHacked" data-slide-to="11" class="hid"></li>
+        {{range $index, $val := .Site.Taxonomies.tags.slider }}
+        {{if (eq $index 0)}}
+        <li data-target="#carouselHacked" data-slide-to="{{$index}}" class="active"></li>
+        {{ else }}
+        <li data-target="#carouselHacked" data-slide-to="{{$index}}"></li>
+        {{end}}
+        {{end}}
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+        {{range $index, $val := .Site.Taxonomies.tags.slider }}
+        {{if (eq $index 0)}}
         <div class="item active">
-            <img src="/images/s1.jpg" alt="Geo carousel pic">
-            <div class="slider_text center">
-                Welcome to Geo Tattoos
+            {{ else }}
+            <div class="item">
+                {{ end }}
+                <img data-src="{{.Page.Params.Image}}" class="lazyload" alt="{{.Title}}">
+                <div class="slider_text {{.Description}}">
+                    {{.Title}}
+                </div>
             </div>
+            {{ end }}
         </div>
-        <div class="item">
-            <img src="/images/s2.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text down">
-                99% effective portrait tattoos
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s3.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text top">
-                Fine accuracy and precision
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s4.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text down">
-                Get tattoos of any symbol and shape
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s5.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text top">
-                Perfect tattoo reworks
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s6.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text down">
-                Jaw dropping text tattoos
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s7.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text center">
-                98% effective tattoo removal
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s8.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text down">
-                Mini tattoos
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s9.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text center">
-                Tattoo training courses
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s10.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text down">
-                George has trained more than 30 artists
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s11.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text top">
-                Eye catching cover-up tattoos
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/s12.jpg" class="lazyload" alt="Geo carousel pic">
-            <div class="slider_text top">
-                Cover-up tattoos
-            </div>
-        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+            <span class="center-box">◀</span>
+        </a>
+        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+            <span class="center-box">▶</span>
+        </a>
     </div>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
-<section class="servprod-bg">
+<section class="services py-3">
     <div class="container">
-        <h1>SERVICES</h1>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" src="/images/Making-tattoo.jpg" alt="Tattoo making pic">
+        <h1>Services</h1>
+        {{range $index, $val := .Site.Taxonomies.tags.services}}
+        <div class="row mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img class="img-responsive lazyload center-block" src="{{.Page.Params.Image}}" alt="{{.Name}}-image">
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h2>Tattoo Making</h2>
-                <p>&emsp;A tattoo is a form of body modification where a design is made by inserting ink, dyes and
-                    pigments, either indelible or temporary, into the dermis layer of the skin to change the
-                    pigment. The process tattooinginvolvestheinsertion of pigment into the skin's dermis. Artists
-                    inject ink into a person's skin to create tattoos. They use electrically powered tattoo machines
-                    that resemble (and sound like) dental drills. Tattoo applicationuses mechanizedneedleto puncture
-                    the skin and inject ink into the dermis. Only 18 years plus can get tattoos. Tattoos are
-                    available for both exposed body and unexposed body.</p>
-                <h4 class="text-left">Types of tattoos</h4>
-                <ul style="margin-left:18px">
-                    <li> Outline tattoos</li>
-                    <li> Colouring </li>
-                    <li> Shading </li>
-                    <li> 3D tattoos </li>
-                    <li> Portraits </li>
-                    <li>Cover up tattoos </li>
-                </ul>
+            <div class="col-lg-8 col-md-6 col-sm-6 px-3">
+                {{.Summary}}
+                <a href="{{.RelPermalink}}"><button type="button" class="btn btn-center btn-block">Know
+                        more</button></a>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h2>Tattoo Removal</h2>
-                <p>&emsp;Tattoo removal is most commonly performed using lasers that break down the ink particles in
-                    the tattoo. Tattoo removal has been performed with various tools since the start of tattooing.
-                    While tattoos were once considered permanent, it is now possible to remove them with treatments,
-                    fully or partially. Lasers remove tattoos by breaking up the pigment colors with a
-                    high-intensity light beam. Black tattoo pigment absorbs all laser wavelengths, making it the
-                    easiest color to treat. Other colors can only be treated by selected lasers based upon the
-                    pigment color. A tattoo removal process may take up to 6 months.</p>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" src="/images/Tattoo-Removal.jpg" alt="Tattoo making pic">
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload" src="/images/Training-tattoo.jpg" alt="Tattoo making pic">
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h2>Tattoo Training</h2>
-                <p>&emsp;Geo Tattoos have created a training program that is widespread and designed to teach you to
-                    learn how to make tattoos with hands on experience. Because it's an intensive training, which is
-                    designed to build character, stamina and focus you will be assisted in every aspect of the
-                    curriculum to make your training worth a lifetime. We have built the trust and our name in the
-                    Tattoo Industry with all hard work and our unique style, so you can count on us to make
-                    you have a good brand as we have. George has trained more than 30 artists so far and has
-                    provided job and entrepreneurship for more than 15 artists. With his ability to serve the
-                    passionate people with his skills and patience has put him a step above of all professionals in
-                    the field. His attitude to contribute and teach his skills is remarkable. He is the perfect
-                    example for WIN-WIN</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h4>These are the various Steps of tattoo training Class:</h3>
-                    <ol style="margin-left:18px">
-                        <li class="marbot"><b>Class 1:</b> Drawing class with pencil and paper- artists learn
-                            outlining, colouring, shading, 3D sketching, etc.</li>
-                        <li><b>Class 2:</b> Tattoo machine handling- assembling, dismantling, methods to use
-                            machines </li>
-                        <li><b>Class 3:</b> Skin depth analysis- artists learn how to measure skin depth. How much
-                            deep can the tattoo machine be inserted.</li>
-                        <li><b>Class 4:</b> Tracing method- how to trace form a design present on a sheet</li>
-                        <li><b>Class 5:</b> Suitability analysis- how to find which are the colours and designs
-                            suitable for different skins.</li>
-                        <li><b>Class 6:</b> Types of tattoos and how to put them- outline tattoos, colouring,
-                            shading, 3D techniques, portraits, cover up tattoos and temporary tattoos. </li>
-                    </ol>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <img class="fluid1 lazyload tabt" src="/images/2-training-tattoo.jpg" alt="Tattoo making pic">
-            </div>
-        </div>
+        {{end}}
     </div>
-    <!-- Tattoo products -->
-    <div class="container pt-3">
-        <hr>
-        <h1 class="pt-3">PRODUCTS</h1>
-        <h2>Tattoo tool kits</h2>
+</section>
+<section id="gallery">
+    <div class="container ptb-5">
+        <h1 class="text-center mb-5">Tattoos Gallery</h1>
         <div class="row">
-            <div class="col-md-3 col-sm-6 mobmar">
-                <h3>Basic</h3>
-                <img class="fluid2 lazyload" src="/images/basic.webp" alt="Basic tattoo tool kit pic">
+            {{range $index, $val := .Site.Taxonomies.tags.homegal}}
+            <div class="col-lg-3 col-md-4 col-xs-4 thumb">
+                <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
+                    <img data-src="{{.Page.Params.image}}" class="zoom lazyload" alt="{{.Name}}">
+                </a>
             </div>
-            <div class="col-md-3 col-sm-6 mobmar">
-                <h3>Intermediate</h3>
-                <img class="fluid2 lazyload" src="/images/intermediate.webp" alt="Intermediate tattoo tool kit pic">
-            </div>
-            <div class="col-md-3 col-sm-6 mobmar">
-                <h3>Machine</h3>
-                <img class="fluid2 lazyload" src="/images/machine.webp" alt="Machine tattoo tool kit pic">
-            </div>
-            <div class="col-md-3 col-sm-6 mobmar">
-                <h3>Professional</h3>
-                <img class="fluid2 lazyload" src="/images/professional.webp" alt="Professional tattoo tool kit pic">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h3 class="text-left"><strong>Basic & intermediate-tattoo-tool-kit</strong></h3>
-                <ol style="margin-left:18px">
-                    <li>Two all-purpose tattoo machines for lining and a shading</li>
-                    <li>Digital power supply</li>
-                    <li>Foot switch </li>
-                    <li>Clip cord </li>
-                    <li>Needles -50 </li>
-                    <li>Starbrite black ink (1 oz) - 1 </li>
-                    <li>Practice skin -2 </li>
-                    <li>Tracing paper - 5 </li>
-                    <li>Tattoo Flash (Desinn) DVD </li>
-                    <li>Rubber parts </li>
-                    <li>Stainless Steel Grip - 2 </li>
-                    <li>Stainless Steel Tips - 2 </li>
-                    <li>Stainless Steel Tube</li>
-                </ol>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 mobmar">
-                <h3 class="text-left"><strong>Machine & professional-tattoo-tool-kit</strong></h3>
-                <ol style="margin-left:18px">
-                    <li>Strong Alloy carrying case</li>
-                    <li>Handmade tattoo liner machine</li>
-                    <li>One Economy shading machine</li>
-                    <li>One Economy multipurpose machine</li>
-                    <li>Cyclone/Mercury power supply</li>
-                    <li>Round Foot switch</li>
-                    <li>Clip cord</li>
-                    <li>6, 1oz starBrite tattoo ink bottles</li>
-                    <li>100 - ink caps</li>
-                    <li>Stainless Steel ink cap holder</li>
-                    <li>50 Assorted needles</li>
-                    <li>Tracing paper - 5</li>
-                    <li>50 Pouches/5 Tubes- A and D Pouches</li>
-                    <li>stencil stuff 1oz</li>
-                    <li>Rubber parts</li>
-                    <li>Stainless Steel Grips - 4</li>
-                    <li>Stainless Steel Tubes - 4</li>
-                    <li>20 Disposable tips or 8 stainless steel Tips</li>
-                    <li>Green Soap</li>
-                    <li>Tattoo Flash (Design) DVD</li>
-                    <li>Practice skins</li>
-                </ol>
-            </div>
+            {{- end }}
+            <a href="{{.Site.BaseURL}}gallery/tattoo-making"><button type="button" class="btn btn-center btn-block">View
+                    more</button></a>
         </div>
     </div>
 </section>
-<!-- gallery-new-fancybox-->
-<div class="container ptb-5">
-    <h1 class="text-center td mb-5">OUR PORTFOLIO</h1>
-    <div class="row">
-
-        {{range $index, $val := .Site.Taxonomies.tags.homegal}}
-        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
-            <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
-                <img src="{{.Page.Params.image}}" class="zoom lazyload" alt="{{.Name}}">
-            </a>
+<section class="products py-3">
+    <div class="container">
+        <h1>Tattoo Products</h1>
+        <div class="row">
+            {{range $index, $val := .Site.Taxonomies.tags.products}}
+            <div class="col-md-3 col-sm-3">
+                <figure>
+                    <figcaption class="text-center">{{.Title}}</figcaption>
+                    <img data-src="{{.Params.Image}}" class="img-responsive lazyload center-block" alt="{{.Name}} img">
+                </figure>
+            </div>
+            {{end}}
         </div>
-        {{- end }}
-
-    </div>
-    <div class="row">
-
-        <div class="col-lg-12 col-md-12 col-xs-12">
-            <a href="{{.Site.BaseURL}}gallery/tattoo-making">
-                <button class="btn mtmob-2" id="submit" type="submit" name="submit" value="Submit">View
-                    more</button>
-            </a>
+        <div class="row">
+            {{range $index, $val := .Site.Taxonomies.tags.prodesc}}
+            <div class="col-md-6 col-sm-6 px-3">
+                {{.Content}}
+            </div>
+            {{end}}
         </div>
     </div>
-</div>
+</section>
 <!--counter-new-->
-<section class="counter">
+<section class="highlights">
     <div class="parallax-overlay ptb-5">
         <div class="container">
             <h1>Geo Numbers</h1>
             <div class="row">
+                {{range $index, $val := .Site.Taxonomies.tags.counter}}
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img src="/images/tatoo-machine.png" class="img-counter lazyload" alt="tattoo making icon">
-                    <div class="employees">
-                        <p class="counter-count">10000</p><i class="fas fa-plus fa-2x"></i>
-                        <p class="count-p">Tattoos made</p>
+                    <img data-src="{{.Page.Params.image}}" class="img-counter lazyload" alt="{{.Title}} icon">
+                    <div class="mb-0">
+                        <p class="counter-count">{{.Description}}</p>
+                        <img data-src="/images/more.png" class="mb-2 lazyload" alt="more sign">
+                        <p class="count-p">{{.Title}}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img src="/images/erase-text.png" class="img-counter lazyload" alt="tattoo removal icon">
-                    <div class="customer">
-                        <p class="counter-count">1000</p><i class="fas fa-plus fa-2x"></i>
-                        <p class="count-p">Tattoos removed</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img src="/images/training.png" class="img-counter lazyload" alt="tattoo training icon">
-                    <div class="design">
-                        <p class="counter-count">30</p><i class="fas fa-plus fa-2x"></i>
-                        <p class="count-p">Tattoo artists trained</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img src="/images/pedal.png" class="img-counter lazyload" alt="tattoo products icon">
-                    <div class="order">
-                        <p class="counter-count">100</p><i class="fas fa-plus fa-2x"></i>
-                        <p class="count-p">Tattoo products</p>
-                    </div>
-                </div>
+                {{end}}
             </div>
             <hr>
         </div>
         <!-- testimonial-->
-        <div class="container mh-3">
+        <div class="container mh-200">
             <h1>What our customers say</h1>
             <div class="row">
                 <div class="col-md-12">
@@ -368,14 +160,13 @@
                         </div>
                         <!-- Carousel Buttons Next/Prev -->
                         <a data-slide="prev" href="#quote-carousel" class="left carousel-control"
-                            aria-label="prev slide button"><i class="fa fa-chevron-left"></i></a>
+                            aria-label="prev slide button"><span class="center-box">◀</span></a>
                         <a data-slide="next" href="#quote-carousel" class="right carousel-control"
-                            aria-label="next slide button"><i class="fa fa-chevron-right"></i></a>
+                            aria-label="next slide button"><span class="center-box">▶</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 {{end}}

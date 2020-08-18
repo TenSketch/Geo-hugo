@@ -2,29 +2,50 @@
 <html lang="en">
 <head>
     {{partial "head" .}}
+    {{partial "singlecss" .}}
     {{- partial "fancycss.html" . -}}
+    {{- partial "masonrycss.html" . -}}
+    <style>
+        p,
+        h2,
+        h3 {
+            text-align: center;
+        }
+        .bg-black {
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-    {{partial "header" .}}
+    {{partial "navbar" .}}
     <section class="tm-bg">
         <div class="container">
             <h1 class="text-center">{{.Title}}</h1>
         </div>
     </section>
-    <div class="container my-5">
-        <div class="masonry">
-            {{range .Resources.Match "gallery/*" -}}
-            {{ $image := . }}
-            <div class="masonry-item">
-                <a data-fancybox="gallery" href="{{.RelPermalink}}" aria-label="{{.Name}}">
-                    <img src="{{ $image.RelPermalink }}" class="masonry-content lazyload" alt="{{.Name}}">
-                </a>
+    <section class="bg-black py-3">
+        <div class="container">
+            <div class="mx-auto h-100-ac-df-jc">
+                <div class="content">
+                    {{.Content}}
+                </div>
             </div>
-            {{- end }}
         </div>
-    </div>
+        <div class="container my-5">
+            <div class="masonry">
+                {{range .Resources.Match "gallery/*" -}}
+                {{ $image := . }}
+                <div class="masonry-item">
+                    <a data-fancybox="gallery" href="{{.RelPermalink}}" aria-label="{{.Name}}">
+                        <img data-src="{{ $image.RelPermalink }}" class="masonry-content lazyload" alt="{{.Name}}">
+                    </a>
+                </div>
+                {{- end }}
+            </div>
+        </div>
+    </section>
     {{partial "footer" .}}
     {{partial "scripts" .}}
-    {{- partial "fancyjs.html" . -}}
+    {{partial "fancyjs.html" .}}
 </body>
 </html>

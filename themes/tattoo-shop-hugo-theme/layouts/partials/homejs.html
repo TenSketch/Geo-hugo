@@ -1,0 +1,27 @@
+<!-- slider-caoursel -->
+<script>
+    $('#carouselHacked').carousel();
+</script>
+<!-- counter -->
+<script>
+    $('.counter-count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script>
+<!-- testimonial -->
+<script>
+    $(document).ready(function () {
+        //carousel options
+        $('#quote-carousel').carousel({
+            pause: true, interval: 10000,
+        });
+    });
+</script>

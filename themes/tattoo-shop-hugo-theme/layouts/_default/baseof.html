@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{- partial "head.html" . -}}
-    {{- partial "fancycss.html" . -}}
+    {{- partial "head" . -}}
+    {{- partial "fancycss" . -}}
 </head>
 <body>
-    {{- partial "header.html" . -}}
+    {{- partial "navbar" . -}}
     {{- block "content" . }}{{- end }}
-    {{- partial "footer.html" . -}}
-    {{- partial "scripts.html" . -}}
-    {{- partial "fancyjs.html" . -}}
+    {{- partial "footer" . -}}
+    {{- partial "scripts" . -}}
+    {{- partial "fancyjs" . -}}
+    {{- partial "homejs" . -}}
 </body>
 </html>
