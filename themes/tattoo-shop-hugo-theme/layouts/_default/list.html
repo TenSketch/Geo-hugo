@@ -1,5 +1,5 @@
 {{define "content"}}
-<div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         {{range $index, $val := .Site.Taxonomies.tags.slider }}
         {{if (eq $index 0)}}
@@ -10,14 +10,14 @@
         {{end}}
     </ol>
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" aria-label="carousel slider">
         {{range $index, $val := .Site.Taxonomies.tags.slider }}
         {{if (eq $index 0)}}
-        <div class="item active">
+        <div class="item active" role="slider">
             {{ else }}
-            <div class="item">
+            <div class="item" role="slider">
                 {{ end }}
-                <img data-src="{{.Page.Params.Image}}" class="lazyload" alt="{{.Title}}">
+                <img src="{{.Page.Params.Image}}" alt="{{.Title}}">
                 <div class="slider_text {{.Description}}">
                     {{.Title}}
                 </div>
@@ -33,13 +33,13 @@
         </a>
     </div>
 </div>
-<section class="services py-3">
+<section class="bg-black py-5">
     <div class="container">
         <h1>Services</h1>
         {{range $index, $val := .Site.Taxonomies.tags.services}}
         <div class="row mb-4">
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <img class="img-responsive lazyload center-block" src="{{.Page.Params.Image}}" alt="{{.Name}}-image">
+                <img data-src="{{.Page.Params.Image}}" class="img-responsive center-block" alt="{{.Name}}-image">
             </div>
             <div class="col-lg-8 col-md-6 col-sm-6 px-3">
                 {{.Summary}}
@@ -48,16 +48,12 @@
             </div>
         </div>
         {{end}}
-    </div>
-</section>
-<section id="gallery">
-    <div class="container ptb-5">
-        <h1 class="text-center mb-5">Tattoos Gallery</h1>
+        <h1 class="my-5">Tattoos Gallery</h1>
         <div class="row">
             {{range $index, $val := .Site.Taxonomies.tags.homegal}}
             <div class="col-lg-3 col-md-4 col-xs-4 thumb">
                 <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
-                    <img data-src="{{.Page.Params.image}}" class="zoom lazyload" alt="{{.Name}}">
+                    <img data-src="{{.Page.Params.image}}" class="zoom" alt="{{.Name}}">
                 </a>
             </div>
             {{- end }}
@@ -66,15 +62,16 @@
         </div>
     </div>
 </section>
-<section class="products py-3">
+
+<section class="products py-5">
     <div class="container">
         <h1>Tattoo Products</h1>
         <div class="row">
             {{range $index, $val := .Site.Taxonomies.tags.products}}
-            <div class="col-md-3 col-sm-3">
+            <div class="col-md-3 col-sm-6">
                 <figure>
                     <figcaption class="text-center">{{.Title}}</figcaption>
-                    <img data-src="{{.Params.Image}}" class="img-responsive lazyload center-block" alt="{{.Name}} img">
+                    <img data-src="{{.Params.Image}}" class="img-responsive center-block" alt="{{.Name}} img">
                 </figure>
             </div>
             {{end}}
@@ -89,17 +86,17 @@
     </div>
 </section>
 <!--counter-new-->
-<section class="highlights">
-    <div class="parallax-overlay ptb-5">
+<section class="highlights parallax">
+    <div class="overlay py-5">
         <div class="container">
             <h1>Geo Numbers</h1>
-            <div class="row">
+            <div class="row text-center">
                 {{range $index, $val := .Site.Taxonomies.tags.counter}}
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <img data-src="{{.Page.Params.image}}" class="img-counter lazyload" alt="{{.Title}} icon">
+                    <img data-src="{{.Page.Params.image}}" class="img-counter" alt="{{.Title}} icon">
                     <div class="mb-0">
                         <p class="counter-count">{{.Description}}</p>
-                        <img data-src="/images/more.png" class="mb-2 lazyload" alt="more sign">
+                        <img data-src="/images/more.png" class="mb-2" alt="more sign">
                         <p class="count-p">{{.Title}}</p>
                     </div>
                 </div>
@@ -110,63 +107,32 @@
         <!-- testimonial-->
         <div class="container mh-200">
             <h1>What our customers say</h1>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="carousel slide" data-ride="carousel" data-interval="false" id="quote-carousel">
-                        <!-- Carousel Slides / Quotes -->
-                        <div class="carousel-inner text-center">
-                            <!-- Quote 1 -->
-                            <div class="item active">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            <p>Excellent portrait of my Mother was done by George on 3rd April 2012.
-                                                Really loved it and would come back again for more others who
-                                                haven’t got a tattoo yet get one at geo tattoo. it’s really awesome!
-                                            </p>
-                                            <small>Rahul Richard</small>
-                                        </div>
+            <div class="carousel slide" data-ride="carousel" data-interval="false" id="quote-carousel">
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner text-center">
+                    {{range $index, $val := .Site.Taxonomies.tags.testimonials}}
+                    {{if (eq $index 0)}}
+                    <div class="item active">
+                        {{else}}
+                        <div class="item">
+                            {{ end }}
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        {{.Content}}
+                                        <small>{{.Title}}</small>
                                     </div>
-                                </blockquote>
-                            </div>
-                            <!-- Quote 2 -->
-                            <div class="item">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            <p>Hey, i'm really happy with your work Geo. Its really sexy shit. Love
-                                                the way you upgraded a simple om with neat shading and all. Much
-                                                appreciated, came out way better than I expected. Will certainly
-                                                remember you because this is my first tattoo. I wish you all the
-                                                best Geo. We might meet again!</p>
-                                            <small>Nandhagopan</small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <!-- Quote 3 -->
-                            <div class="item">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            <p>This is my 3rd tattoo at geo tattoos. George sir is really awesome
-                                                artist. His work is really superb. If I ever plan for new tattoos.
-                                                It will be at Geo Tattoos.</p>
-                                            <small>Sharad Rahmaniac</small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
+                                </div>
+                            </blockquote>
                         </div>
-                        <!-- Carousel Buttons Next/Prev -->
-                        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"
-                            aria-label="prev slide button"><span class="center-box">◀</span></a>
-                        <a data-slide="next" href="#quote-carousel" class="right carousel-control"
-                            aria-label="next slide button"><span class="center-box">▶</span></a>
+                        {{ end }}
                     </div>
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"
+                        aria-label="prev slide button"><span class="center-box">◀</span></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"
+                        aria-label="next slide button"><span class="center-box">▶</span></a>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 {{end}}

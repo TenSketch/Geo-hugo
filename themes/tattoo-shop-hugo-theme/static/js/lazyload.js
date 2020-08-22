@@ -1,0 +1,1 @@
+const images=document.querySelectorAll("[data-src]");function preloadImage(e){const r=e.getAttribute("data-src");r&&(e.src=r)}const imgOptions={threshold:0,rootmargin:"0 0 -500px 0"},imgObserver=new IntersectionObserver((e,r)=>{e.forEach(e=>{e.isIntersecting&&(preloadImage(e.target),r.unobserve(e.target))})},imgOptions);images.forEach(e=>{imgObserver.observe(e)});

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     {{partial "head" .}}
+    {{partial "singlecss" .}}
     <style>
         /* feedback-new */
         .center-box img {
@@ -14,21 +15,19 @@
 </head>
 <body>
     {{partial "navbar" .}}
-    <section class="tm-bg">
+    <section class="intro_bg-single parallax">
         <div class="container">
             <h1 class="text-center">{{.Title}}</h1>
         </div>
     </section>
     <section style="background: #424242;">
-        <div class="container ptb-5">
+        <div class="container py-5">
             <div class="center-box mb-3">
                 <a href="https://g.page/geotattooschennai/review?rc" title="click to send a google review">
                     <img data-src="/images/review-us-on-google-image.png" class="img-responsive lazyload"
                         alt="review-us-on-google-image">
                 </a>
             </div>
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-17a1f603-44f5-4f39-a6d4-13c65c575509"></div>
         </div>
     </section>
     {{partial "footer" .}}

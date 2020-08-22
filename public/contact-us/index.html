@@ -4,92 +4,76 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact us | Geo Tattoos</title>
-    
-    <meta name="description" content="Do you want an amazing tattoo? Contact us now.">
-    
-    
-    <meta name="keywords" content="[contact geo tattoos, geo tattoos contact no., geo tattoos contact number, geo tattoos address, geo tattoos location, geo tattoos map, tattoo shop contact number, Tattoo shops in Chennai, Tattoo shop in Chennai, Tattoo in Chennai, Best Tattoo shop in Chennai, Low cost Tattoo shops in Chennai, Tattoo Making in Chennai, Tattoo Removal in Chennai, Tattoo Training in Chennai, Tattoo Products selling in Chennai]">
-    
-    
-    <meta property="og:title" content="Contact us | Geo Tattoos">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.geotattoos.com/">
-    
-    <meta property="og:description" content="Do you want an amazing tattoo? Contact us now.">
-    
-    
-    <meta property="og:keywords" content="[contact geo tattoos, geo tattoos contact no., geo tattoos contact number, geo tattoos address, geo tattoos location, geo tattoos map, tattoo shop contact number, Tattoo shops in Chennai, Tattoo shop in Chennai, Tattoo in Chennai, Best Tattoo shop in Chennai, Low cost Tattoo shops in Chennai, Tattoo Making in Chennai, Tattoo Removal in Chennai, Tattoo Training in Chennai, Tattoo Products selling in Chennai]">
-    
-    
-    <meta property="og:image" content="https://www.geotattoos.com//images/og_image.png" />
-    <meta property="og:image:secure_url" content="https://www.geotattoos.com/images/og_image.png" />
-    
-<link rel="icon" type="image/png" href="/images/favicon.png">
+<title>Contact us | Geo Tattoos</title>
+
+<meta name="description" content="Do you want an amazing tattoo? Contact us now.">
+
+
+<meta name="keywords" content="[contact geo tattoos, geo tattoos contact no., geo tattoos contact number, geo tattoos address, geo tattoos location, geo tattoos map, tattoo shop contact number, Tattoo shops in Chennai, Tattoo shop in Chennai, Tattoo in Chennai, Best Tattoo shop in Chennai, Low cost Tattoo shops in Chennai, Tattoo Making in Chennai, Tattoo Removal in Chennai, Tattoo Training in Chennai, Tattoo Products selling in Chennai]">
+
+
+<meta property="og:title" content="Contact us | Geo Tattoos">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.geotattoos.com/">
+
+<meta property="og:description" content="Do you want an amazing tattoo? Contact us now.">
+
+
+<meta property="og:keywords" content="[contact geo tattoos, geo tattoos contact no., geo tattoos contact number, geo tattoos address, geo tattoos location, geo tattoos map, tattoo shop contact number, Tattoo shops in Chennai, Tattoo shop in Chennai, Tattoo in Chennai, Best Tattoo shop in Chennai, Low cost Tattoo shops in Chennai, Tattoo Making in Chennai, Tattoo Removal in Chennai, Tattoo Training in Chennai, Tattoo Products selling in Chennai]">
+
+
+<meta property="og:image" content="https://www.geotattoos.com//images/og_image.png" />
+<meta property="og:image:secure_url" content="https://www.geotattoos.com/images/og_image.png" />
+
+<link rel="icon" type="image/png" href="/favicon-32x32.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <style>
-    .tm-bg {
-        background: url("/images/parallax.jpg") no-repeat fixed center;
-        background-size: cover;
+    .intro_bg-single {
+        background-image: url(/images/parallax.jpg);
         height: 70vh;
         display: flex;
         align-items: center;
     }
-
-    .tm-bg h1 {
+    .intro_bg-single h1 {
         font-size: 5rem;
         text-transform: uppercase;
         background-color: #00000067;
         padding: 1rem;
         border-radius: 5px;
         width: fit-content;
-        position: relative;
-        display: flex;
         margin: auto;
     }
 </style>
     <style>
-         
-        h1:nth-last-child(2) {
-            color: #212121 !important;
-        }
         .card {
-            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        @media (max-width: 767px) {
-            .card {
-                flex-direction: column;
-            }
+             
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .card-body {
-            background: rgb(224, 224, 224);
-            height: 300px;
-            width: 100%;
-            border-radius: 10px;
+            box-sizing: border-box;
+            flex: 1 0 250px;
             margin: 1rem;
-            box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
-            cursor: pointer;
+            border-radius: 1rem;
             padding: 1rem;
-            transition: box-shadow .2s ease;
-        }
-        @media (min-width: 768px) and (max-width: 1200px) {
-            .card-body {
-                height: 100%;
-                margin: 1.2rem;
-
-            }
+            box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
         }
         .card-body p {
-            color: #000 !important;
             text-align: left;
         }
-        .OM {
-            width: auto;
-            height: 40px;
+        .card-body a {
+            transition: .2s ease-in-out;
+        }
+        .card-body a:hover {
+            color: #cecece;
+        }
+        @media (max-width: 600px) {
+            .card-body p {
+                text-align: center!important;
+            }
         }
          
         .map-responsive {
@@ -105,6 +89,17 @@
             width: 100%;
             position: absolute;
         }
+         
+        @media (min-width: 600px) and (max-width: 991px) {
+            .map-responsive {
+                padding-top: 100px;
+            }
+        }
+        @media (max-width: 600px) {
+            .map-responsive {
+                padding-top: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,27 +107,16 @@
     style="background-color: #fff; border-color: transparent;">
     <div class="container">
         <div class="navbar-header navbar-left pull-left">
-            <a class="navbar-brand" href="https://www.geotattoos.com/" aria-label="Geo Tattoos home page link">
+            <a class="pull-left" href="https://www.geotattoos.com/" aria-label="Geo Tattoos home page link">
                 <img src="/images/logo.png" class="img-logo" alt="Geo Tattoos logo">
             </a>
         </div>
         <div class="navbar-header navbar-right pull-right">
             <ul class="nav pull-left">
-                <li class="dropdown pull-right">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-icon">
-                        ☎️
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="tel:+919884211116" title="tap to call mobile"
-                                aria-label="tap to call mobile">📱9884211116</a>
-                        </li>
-                        <li>
-                            <a href="tel:04426211116" title="tap to call landline"
-                                aria-label="tap to call landline">📞04426211116</a>
-                        </li>
-                    </ul>
+                <li class="pull-right">
+                    <a href="tel:+919884211116" class="nav-icon" title="tap to call mobile"
+                        aria-label="tap to call mobile"><span class="emoji-font-med">📱</span> <span
+                            class="d-none-mob">9884211116</span></a>
                 </li>
                 <li class="pull-right">
                     <a href="https://www.facebook.com/geotattooschennai/" class="nav-icon" target="_blank"
@@ -189,48 +173,67 @@
         </div>
     </div>
 </nav>
-    <section class="tm-bg">
+    <section class="intro_bg-single parallax">
         <div class="container">
             <h1 class="text-center">Contact us | Geo Tattoos</h1>
         </div>
     </section>
-    <section class="ptb-5">
-        <div class="container-fluid">
+    <section class="py-5 bg-black">
+        <div class="container">
             <h1 class="mb-4">Our Locations</h1>
             <div class="card">
                 
                 <div class="card-body">
-                    <img class="img-responsive center-block" src="/images/logo.png" alt="Roundtana Anna Nagar">
-                    <p><strong>Head office:</strong><br>
+                    <img class="img-responsive" data-src="/images/Geo-Tattoos-shop-exterior-roundtana.jpg" alt="Roundtana Anna Nagar">
+                    <p><strong>Branch 1:</strong><br>
 A1, V.S.D. Plaza,<br>
 No. 7 Anna Nagar,<br>
 Roundtana, 2nd Avenue,<br>
-Next to Penguine Xerox,<br>
-Chennai-600 040.</p>
+Chennai, TN-60004, India.<br>
+<strong>Landmark:</strong> Next to Penguine Xerox,<br>
+<br>
+<a href="https://g.page/geotattooschennai" title="Get directions to Geo Tattoos Roundtana"><strong>Roundtana location</strong> <img src="/images/googlemaps-icon.png" alt="google map icon"></a><br>
+<br>
+<a href="tel:04426471116" title="tap to call">☎️ 044-26471116</a></p>
 
                 </div>
                 
                 <div class="card-body">
-                    <img class="img-responsive center-block" src="/images/logo.png" alt="Shanthi Colony Anna Nagar">
-                    <p>No. AB 101, P.K.S Complex, 6th Main Road, Shanthi Colony, Anna Nagar, Chennai- 600.</p>
+                    <img class="img-responsive" data-src="/images/logo.png" alt="Shanthi Colony Anna Nagar">
+                    <p><strong>Branch 2:</strong><br>
+No. AB 101, P.K.S Complex,<br>
+6th Main Road,<br>
+Shanthi Colony, Anna Nagar,<br>
+Chennai, TN-600040, India.<br>
+<br>
+<br>
+<a href="https://goo.gl/maps/HH2TgWjTZCKsZDxt5" title="Get directions to Geo Tattoos Shanthi Colony branch"><strong>Shanthi Colony location</strong> <img src="/images/googlemaps-icon.png" alt="google map icon"></a><br>
+<br>
+<a href="tel:04426211116" title="tap to call">☎️ 044-26211116</a></p>
 
                 </div>
                 
                 <div class="card-body">
-                    <img class="img-responsive center-block" src="/images/logo.png" alt="Purasaivakkam">
-                    <p>Shop no.11, Prince Tower basement,<br>
+                    <img class="img-responsive" data-src="/images/Geo-Tattoos-shop-exterior-purusaiwalkam.jpg" alt="Purasaivakkam">
+                    <p><strong>Branch 3:</strong><br>
+Shop no.11, Prince Tower basement,<br>
 94/114, Purasaivakkam High Road,<br>
-Chennai- 600 010.</p>
+Chennai, TN-600010, India<br>
+<br>
+<a href="https://g.co/kgs/GWe4P4" title="Get directions to Geo Tattoos Purasaivakkam branch"><strong>Purasaivakkam location</strong> <img src="/images/googlemaps-icon.png" alt="google map icon"></a><br>
+<br>
+<a href="tel:04426611116" title="tap to call">☎️ 044-26611116</a></p>
 
                 </div>
                 
                 <div class="card-body">
-                    <img class="img-responsive center-block" src="/images/logo.png" alt="Arumbakkam">
-                    <p>10/11, (Opp. to vaishnava college),<br>
+                    <img class="img-responsive" data-src="/images/logo.png" alt="Arumbakkam">
+                    <p><strong>Branch 3:</strong><br>
+10/11, (Opp. to vaishnava college),<br>
 Poonamallee High Rd,<br>
 Dr. Radhakrishnan Nagar,<br>
-SBI Officers Colony,<br>
-Arumbakkam, Chennai- 600 106.</p>
+SBI Officers Colony, Arumbakkam,<br>
+Chennai,TN-600106, India</p>
 
                 </div>
                 
@@ -242,22 +245,22 @@ Arumbakkam, Chennai- 600 106.</p>
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d485.779106219845!2d80.217665!3d13.084424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce4039b093f9b235!2sGeo+Tattoos!5e0!3m2!1sen!2sin!4v1526309626552"
             frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <footer id="myFooter">
-    <div class="parallax-overlay py-3">
+    <footer>
+    <div class="overlay py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-6">
-                    <h4>🔗 Links</h4>
+                <div class="col-md-3 col-sm-6">
+                    <h1>🔗 Links</h1>
                     <ul>
-                        <li><a href="https://www.geotattoos.com/">Home</a>
+                        <li><a href="https://www.geotattoos.com/">🏡Home</a>
                         </li>
-                        <li><a href="https://www.geotattoos.com/about_us">About
+                        <li><a href="https://www.geotattoos.com/about_us">✍🏼About
                                 us</a></li>
-                        <li><a href="https://www.geotattoos.com/gallery/tattoo-making">Gallery</a></li>
+                        <li><a href="https://www.geotattoos.com/gallery/tattoo-making">🖼Gallery</a></li>
                         <li><a href="https://www.geotattoos.com/gallery/tattoo-removal">Tattoo Removal</a></li>
                         <li><a href="https://www.geotattoos.com/gallery/tattoo-training">Tattoo Training</a></li>
                     </ul>
-                    <h4>🤙🏼 Reach us</h4>
+                    <h1>🤙🏼 Reach us</h1>
                     <ul>
                         <li><a href="https://www.geotattoos.com/contact-us">Contact
                                 us</a></li>
@@ -267,22 +270,25 @@ Arumbakkam, Chennai- 600 106.</p>
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <h4>📌 Our Locations</h4>
+                    <h1>📌 Our Locations</h1>
                     <ul>
                         <li>
                             <a href="https://g.page/geotattooschennai" target="_blank" rel="noopener"
-                                aria-label="Geo Tattoos head office address">Roundtana, Anna Nagar (<b>Head
-                                    Office:</b>)</a>
+                                aria-label="Geo Tattoos roundtana location"
+                                title="Geo Tattoos roundtana location">Roundtana, Anna Nagar</a>
                         </li>
                         <li>
                             <a href="https://goo.gl/maps/HH2TgWjTZCKsZDxt5" target="_blank" rel="noopener"
-                                aria-label="Geo Tattoos Shanthi colony address">Shanthi Colony, Anna Nagar</a>
+                                aria-label="Geo Tattoos Shanthi colony location"
+                                title="Geo Tattoos Shanthi colony location">Shanthi Colony, Anna Nagar</a>
                         </li>
+                        <li><a href="https://g.co/kgs/GWe4P4" target="_blank" rel="noopener"
+                                aria-label="Geo Tattoos Purasaivakkam location"
+                                title="Geo Tattoos Purasaivakkam location">Purasaivakkam</a></li>
                         <li>Arumbakkam</li>
-                        <li>Kellys</li>
-                        <li>Arumbakkam</li>
+                        
                     </ul>
-                    <h4>📧 Email</h4>
+                    <h1>📧 Email</h1>
                     <ol>
                         <li><a href="mailto:george@geotattoos.com?Subject=Hello%20Geo%20Tattoos"
                                 target="_top">george@geotattoos.com</a>
@@ -292,16 +298,14 @@ Arumbakkam, Chennai- 600 106.</p>
                         <li class="mt-2">
                             <a href="https://wa.me/919884211116" target="_blank" rel="noopener"
                                 title="send a whatsapp message" aria-label="send whatsapp message">
-                                <img src="/images/whatsapp.png" class="img-responsive lazyload"
-                                    alt="send whatsapp enquiry">
+                                <img src="/images/whatsapp.png" class="lazyload" alt="send whatsapp enquiry">
                             </a>
                         </li>
                     </ol>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                    <h4>Send a message</h4>
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
-                        action="/thank-you">
+                <div class="col-md-5 col-sm-12">
+                    <h1>Send a message</h1>
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" class="form-control" name="Name" placeholder="Enter your name"
@@ -331,7 +335,7 @@ Arumbakkam, Chennai- 600 106.</p>
         </div>
     </div>
 </footer>
-<section class="copyrights">
+<section class="copyrights bg-black text-center">
     <div class="container">
         <p class="text-center">Copyright ©
             <script>document.write(new Date().getFullYear());</script> Geo Tattoos<br>Made
@@ -341,6 +345,6 @@ Arumbakkam, Chennai- 600 106.</p>
 </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
+<script src="/js/lazyload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script></body>
 </html>

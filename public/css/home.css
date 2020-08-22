@@ -1,0 +1,262 @@
+@media (min-width: 1024px) {
+  body {
+    padding-top: 18px;
+  }
+}
+@media (min-width: 768px) {
+  /* caption */
+  .slider_text {
+    font-size: 3em;
+  }
+  /* testimonials */
+  .mh-200 {
+    height: 300px;
+  }
+}
+/* carousel-fade */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+  opacity: 0.7;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100vh;
+}
+/* caption-position */
+.center {
+  top: 50%;
+  left: 50%;
+}
+.down {
+  top: 80%;
+  left: 50%;
+}
+.top {
+  top: 20%;
+  left: 50%;
+}
+.slider_text {
+  padding: 5px;
+  background: rgb(0, 0, 0, 0.3);
+  color: #fff;
+  position: absolute;
+  line-height: 1em !important;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+/* WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers." now override the 3.3 new styles for modern browsers & apply opacity */
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* tablet potrait */
+@media (min-width: 601px) and (max-width: 1077px) {
+  .slider_text {
+    font-size: 2.3em !important;
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-inner .item {
+    height: auto !important;
+  }
+  .counter-count {
+    font-size: 25px !important;
+  }
+  .count-p {
+    font-size: 20px !important;
+  }
+}
+.thumb {
+  margin-bottom: 30px;
+}
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+}
+img.zoom:hover {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+.products {
+  background: #cecece;
+}
+.products h1,
+.products h2,
+.products li,
+.products h3 {
+  color: #212121 !important;
+}
+.products h2 {
+  text-align: left;
+}
+.products ol {
+  list-style: none;
+  padding-left: 5px;
+}
+figcaption {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .mh-200 {
+    height: 300px;
+  }
+  .products img {
+    height: 200px;
+  }
+  .products h3,
+  .products li {
+    text-align: center;
+  }
+}
+/* testimonial carousel */
+@media (min-width: 991px) {
+  .mh-200 {
+    height: 250px !important;
+  }
+}
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+}
+#quote-carousel.carousel,
+#quote-carousel.carousel-inner,
+#quote-carousel.carousel-inner .item {
+  height: 100%;
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: none;
+  margin-top: 30px;
+}
+.carousel-control:focus,
+.carousel-control:hover {
+  opacity: 1;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p {
+  text-align: center;
+}
+.item blockquote p:before {
+  position: relative;
+  content: url("/images/quote.png");
+  float: left;
+  margin-right: 10px;
+  bottom: 15px;
+  left: 5px;
+}
+/* highlights: counter and testimonials */
+.highlights {
+  background-image: url(/images/parallex_4.jpg);
+}
+/* counter-new */
+.img-counter {
+  border: 5px solid white;
+  background: white;
+  border-radius: 10px;
+  width: auto;
+}
+.counter-count {
+  font-size: 35px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  line-height: 92px;
+  display: inline-block;
+}
+.count-p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 34px;
+  text-align: center;
+  margin-top: 0px;
+}
+@media (max-width: 600px) {
+  /* slider mobile */
+  .carousel-indicators {
+    bottom: -12px;
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-inner .item {
+    height: auto !important;
+  }
+  .slider_text {
+    font-size: 1.5em;
+  }
+  .thumb {
+    margin: 0px;
+    padding: 5px;
+  }
+  img.zoom {
+    width: 100%;
+    height: 100px;
+  }
+  .counter-count {
+    font-size: 25px !important;
+  }
+  .count-p {
+    font-size: 20px !important;
+  }
+  .item blockquote p {
+    padding: 0 1.5rem;
+  }
+}

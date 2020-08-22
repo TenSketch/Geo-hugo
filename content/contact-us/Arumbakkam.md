@@ -6,8 +6,9 @@ tags: ["location"]
 draft: false
 ---
 
+**Branch 3:**\
 10/11, (Opp. to vaishnava college),\
 Poonamallee High Rd,\
 Dr. Radhakrishnan Nagar,\
-SBI Officers Colony,\
-Arumbakkam, Chennai- 600 106.
+SBI Officers Colony, Arumbakkam,\
+Chennai,TN-600106, India

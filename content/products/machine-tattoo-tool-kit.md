@@ -6,7 +6,7 @@ tags: ["products", "prodesc"]
 draft: false
 ---
 
-### Machine & professional-tattoo-tool-kit
+## Machine and professional
 
 1. Strong Alloy carrying case
 2. Handmade tattoo liner machine

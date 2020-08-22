@@ -6,7 +6,7 @@ tags: ["products", "prodesc"]
 draft: false
 ---
 
-### Basic and intermediate
+## Basic and intermediate
 
 1. Two all-purpose tattoo machines for lining and a shading
 2. Digital power supply
