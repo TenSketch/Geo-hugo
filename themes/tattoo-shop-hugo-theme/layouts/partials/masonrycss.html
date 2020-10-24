@@ -6,7 +6,7 @@
     .masonry-item {
         justify-content: center;
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         margin-bottom: 5px;
     }
     .masonry-item,
@@ -14,25 +14,22 @@
         overflow: hidden;
     }
     .masonry-content {
-        width: 200px;
+        width: 100%;
         height: auto;
     }
-    @media (min-width:1024px) {
+    @media (max-width:767px) and (min-width:601px) {
         .masonry {
-            columns: 6 !important;
+            columns: 3 !important;
         }
     }
     @media (max-width:1023px) and (min-width:768px) {
         .masonry {
             columns: 4 !important;
         }
-        .masonry-content {
-            width: 250px !important;
-        }
     }
-    @media (max-width:767px) and (min-width:601px) {
+    @media (min-width:1024px) {
         .masonry {
-            columns: 3 !important;
+            columns: 6 !important;
         }
     }
 </style>

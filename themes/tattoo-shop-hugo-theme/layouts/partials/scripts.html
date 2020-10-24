@@ -1,3 +1,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- navbar animate on scroll -->
+<script>
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+            $('.navbar').addClass('animated fadeInDown');
+        } else {
+            $('.navbar').removeClass('animated fadeInDown');
+        }
+    });
+</script>
 <script src="/js/lazyload.js"></script>

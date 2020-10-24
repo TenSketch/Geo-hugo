@@ -1,74 +1,104 @@
-{{define "content"}}
-<div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-    <ol class="carousel-indicators">
-        {{range $index, $val := .Site.Taxonomies.tags.slider }}
-        {{if (eq $index 0)}}
-        <li data-target="#carouselHacked" data-slide-to="{{$index}}" class="active"></li>
-        {{ else }}
-        <li data-target="#carouselHacked" data-slide-to="{{$index}}"></li>
-        {{end}}
-        {{end}}
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox" aria-label="carousel slider">
-        {{range $index, $val := .Site.Taxonomies.tags.slider }}
-        {{if (eq $index 0)}}
-        <div class="item active" role="slider">
-            {{ else }}
-            <div class="item" role="slider">
-                {{ end }}
-                <img src="{{.Page.Params.Image}}" alt="{{.Title}}">
-                <div class="slider_text {{.Description}}">
-                    {{.Title}}
-                </div>
+{{define "banner"}}
+<section class="header">
+    <div class="container">
+        <div class="intro">
+            <h1>Tattoo Making, Tattoo Removal, Tattoo Training</h1>
+            <img src="/images/geo-logo.png" alt="geo tattoos logo">            
+            <div class="stats">
+                <h2>Chennai's most wanted tattoo artist<br>More than 50,000 tattoos made.<br>100% safety and hygiene.
+                </h2>
+
             </div>
-            {{ end }}
+
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
-            <span class="center-box">◀</span>
-        </a>
-        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
-            <span class="center-box">▶</span>
-        </a>
     </div>
-</div>
+</section>
+{{end}}
+{{define "content"}}
+<!-- <div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-md-6 col-sm-6" style="background: #333;color: #ccc;">
+            Nostrud elit laboris fugiat aute dolor minim id do. Velit ad labore deserunt minim id amet magna ut cillum
+            velit consequat eu labore do. Eiusmod mollit deserunt aliquip irure enim culpa ut cupidatat magna. Laborum
+            id excepteur proident irure consectetur sint ut. Exercitation ullamco incididunt tempor magna pariatur
+            officia labore cillum nostrud exercitation anim. Minim irure commodo esse sit fugiat.
+
+            Eu aliqua excepteur dolor exercitation non culpa minim magna. Eiusmod est anim non irure officia ea et
+            aliqua fugiat in dolor incididunt pariatur ullamco. Nostrud non irure ad nisi ipsum pariatur tempor
+            consequat ea cupidatat sit. Quis laborum velit aliqua elit excepteur pariatur officia mollit proident non
+            velit commodo labore elit.
+
+            Occaecat ex occaecat reprehenderit elit ut ullamco. Qui consequat ullamco quis fugiat elit aliqua incididunt
+            nisi nostrud aliquip. Magna dolore do fugiat consequat excepteur veniam deserunt in id non sit veniam
+            nostrud. Adipisicing excepteur voluptate voluptate ipsum ea consectetur ullamco velit. Adipisicing occaecat
+            dolore sit ipsum eu. Non sint laboris magna excepteur eiusmod eiusmod. Occaecat consectetur nisi ex nulla
+            nisi proident aute.
+
+            Amet proident aute do aute laborum ipsum sint. Ad velit excepteur aliqua culpa nulla eiusmod. Reprehenderit
+            irure minim exercitation officia minim fugiat minim incididunt. Sint sunt do enim exercitation esse cillum
+            amet dolore magna fugiat dolore amet enim. Deserunt in proident duis pariatur incididunt esse. In in id enim
+            qui.
+        </div>
+        <div class="col-sm-6" style="background: #ccc;">
+            Nostrud elit laboris fugiat aute dolor minim id do. Velit ad labore deserunt minim id amet magna ut cillum
+            velit consequat eu labore do. Eiusmod mollit deserunt aliquip irure enim culpa ut cupidatat magna. Laborum
+            id excepteur proident irure consectetur sint ut. Exercitation ullamco incididunt tempor magna pariatur
+            officia labore cillum nostrud exercitation anim. Minim irure commodo esse sit fugiat.
+
+            Eu aliqua excepteur dolor exercitation non culpa minim magna. Eiusmod est anim non irure officia ea et
+            aliqua fugiat in dolor incididunt pariatur ullamco. Nostrud non irure ad nisi ipsum pariatur tempor
+            consequat ea cupidatat sit. Quis laborum velit aliqua elit excepteur pariatur officia mollit proident non
+            velit commodo labore elit.
+
+            Occaecat ex occaecat reprehenderit elit ut ullamco. Qui consequat ullamco quis fugiat elit aliqua incididunt
+            nisi nostrud aliquip. Magna dolore do fugiat consequat excepteur veniam deserunt in id non sit veniam
+            nostrud. Adipisicing excepteur voluptate voluptate ipsum ea consectetur ullamco velit. Adipisicing occaecat
+            dolore sit ipsum eu. Non sint laboris magna excepteur eiusmod eiusmod. Occaecat consectetur nisi ex nulla
+            nisi proident aute.
+
+            Amet proident aute do aute laborum ipsum sint. Ad velit excepteur aliqua culpa nulla eiusmod. Reprehenderit
+            irure minim exercitation officia minim fugiat minim incididunt. Sint sunt do enim exercitation esse cillum
+            amet dolore magna fugiat dolore amet enim. Deserunt in proident duis pariatur incididunt esse. In in id enim
+            qui.
+        </div>
+    </div>
+
+
+
+</div> -->
 <section class="bg-black py-5">
     <div class="container">
         <h1>Services</h1>
         {{range $index, $val := .Site.Taxonomies.tags.services}}
         <div class="row mb-4">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
                 <img data-src="{{.Page.Params.Image}}" class="img-responsive center-block" alt="{{.Name}}-image">
             </div>
-            <div class="col-lg-8 col-md-6 col-sm-6 px-3">
+            <div class="col-lg-8 col-sm-6 px-3">
                 {{.Summary}}
-                <a href="{{.RelPermalink}}"><button type="button" class="btn btn-center btn-block">Know
-                        more</button></a>
+                <a href="{{.RelPermalink}}" class="btn btn-block">Know more</a>
             </div>
         </div>
         {{end}}
-        <h1 class="my-5">Tattoos Gallery</h1>
-        <div class="row">
+        <h1 class="my-5 pt-3">Tattoos Gallery</h1>
+        <div class="row mb-2">
             {{range $index, $val := .Site.Taxonomies.tags.homegal}}
-            <div class="col-lg-3 col-md-4 col-xs-4 thumb">
+            <div class="col-sm-3 col-xs-4 thumb">
                 <a data-fancybox="gallery" href="{{.Page.Params.image}}" aria-label="{{.Name}}">
                     <img data-src="{{.Page.Params.image}}" class="zoom" alt="{{.Name}}">
                 </a>
             </div>
             {{- end }}
-            <a href="{{.Site.BaseURL}}gallery/tattoo-making"><button type="button" class="btn btn-center btn-block">View
-                    more</button></a>
         </div>
+        <a href="{{.Site.BaseURL}}gallery/tattoo-making" class="btn btn-block">View more</a>
     </div>
 </section>
-
 <section class="products py-5">
     <div class="container">
         <h1>Tattoo Products</h1>
         <div class="row">
             {{range $index, $val := .Site.Taxonomies.tags.products}}
-            <div class="col-md-3 col-sm-6">
+            <div class="col-sm-3">
                 <figure>
                     <figcaption class="text-center">{{.Title}}</figcaption>
                     <img data-src="{{.Params.Image}}" class="img-responsive center-block" alt="{{.Name}} img">
@@ -78,7 +108,7 @@
         </div>
         <div class="row">
             {{range $index, $val := .Site.Taxonomies.tags.prodesc}}
-            <div class="col-md-6 col-sm-6 px-3">
+            <div class="col-sm-6 px-3">
                 {{.Content}}
             </div>
             {{end}}
@@ -92,7 +122,7 @@
             <h1>Geo Numbers</h1>
             <div class="row text-center">
                 {{range $index, $val := .Site.Taxonomies.tags.counter}}
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="col-sm-3">
                     <img data-src="{{.Page.Params.image}}" class="img-counter" alt="{{.Title}} icon">
                     <div class="mb-0">
                         <p class="counter-count">{{.Description}}</p>
