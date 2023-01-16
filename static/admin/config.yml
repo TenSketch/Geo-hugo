@@ -9,15 +9,20 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "gallery" # Used in routes, e.g., /admin/collections/gallery
-    label: "Tattoo Making Gallery" # Used in the UI
-    widget": "image"
-    choose_url: true
+    label: "Gallery" # Used in the UI
+    # widget": "image"
     folder: "content/gallery/tattoo-making/gallery" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_library:
-      config:
-        multiple: true
+    fields: # The fields for each document, usually in front matter
+      - label: "attoo Making Gallery"
+        name: "image"
+        required: true
+        widget: "image"
+        choose_url: true
+        media_library:
+          config:
+            multiple: true
 
 
       
