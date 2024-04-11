@@ -112,7 +112,7 @@ a {
   width: 100%;
   z-index: 9999 !important;
 }
-.affix ~ .container {
+.affix ~ .container-affix {
   position: relative;
   top: 50px;
 }
