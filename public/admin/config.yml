@@ -21,10 +21,7 @@ collections:
           name: "image",
           required: true,
           widget: "image",
-          choose_url: true,
-          media_library:
-            config:
-              multiple: true }
+          choose_url: true }
       - { label: "Image Title",
           name: "title",
           widget: "string",
