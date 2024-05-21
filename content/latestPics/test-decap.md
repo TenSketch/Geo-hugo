@@ -1,9 +1,8 @@
 ---
-image:
-  - /images/uploads/chital-outer-view.jpg
+image: "/images/home_gallery/Tattoo1.jpg"
 title: test decap
 tags:
-  - homegal
+  - galnew
 date: 2024-04-11T15:33:00.000Z
 draft: false
 ---

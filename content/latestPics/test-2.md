@@ -1,6 +1,5 @@
 ---
-image:
-  - /images/uploads/delux-outer.jpg
+image: /images/home_gallery/Tattoo2.jpg
 title: test 2
 tags:
   - galnew
