@@ -50,7 +50,7 @@
                 {{ $image := . }}
                 <div class="col-sm-3 col-xs-4 thumb">
                     <a data-fancybox="gallery" href="{{.RelPermalink}}" aria-label="{{.Name}}">
-                        <img data-src="{{ $image.RelPermalink }}" class="zoom" alt="{{.Name}}">
+                        <img data-src="{{ $image.RelPermalink }}" class="zoom lazyload" alt="{{.Name}}">
                     </a>
                 </div>
                 {{- end }}
