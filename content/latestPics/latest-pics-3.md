@@ -1,5 +1,5 @@
 ---
-image: /img/Tattoo5.jpg
+image: /img/Tattoo3.jpg
 title: test 3
 tags:
   - galnew
