@@ -16,6 +16,11 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: true
+    media_library:
+      name: cloudinary
+      config:
+        cloud_name: tensketch285
+        api_key: 995746926192923
     fields: # The fields for each document, usually in front matter
       - { label: "Image",
           name: "image",
