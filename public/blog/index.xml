@@ -2,52 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tatoo 2 on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>https://www.geotattoos.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in tatoo 2 on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 May 2024 09:12:26 +0530</lastBuildDate>
-    <atom:link href="https://www.geotattoos.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog1</title>
-      <link>https://www.geotattoos.com/blog/blog1/</link>
+      <link>http://localhost:1313/blog/blog1/</link>
       <pubDate>Tue, 21 May 2024 09:12:26 +0530</pubDate>
-      <guid>https://www.geotattoos.com/blog/blog1/</guid>
+      <guid>http://localhost:1313/blog/blog1/</guid>
       <description>&lt;h2 id=&#34;blog1&#34;&gt;Blog1&lt;/h2&gt;&#xA;&lt;p&gt;This is first blog of geo tattoos&lt;/p&gt;</description>
     </item>
     <item>
       <title>clear blog</title>
-      <link>https://www.geotattoos.com/blog/clear-blog/</link>
+      <link>http://localhost:1313/blog/clear-blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/blog/clear-blog/</guid>
+      <guid>http://localhost:1313/blog/clear-blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Final test</title>
-      <link>https://www.geotattoos.com/blog/final-test/</link>
+      <link>http://localhost:1313/blog/final-test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/blog/final-test/</guid>
+      <guid>http://localhost:1313/blog/final-test/</guid>
       <description></description>
     </item>
     <item>
       <title>tatoo 2</title>
-      <link>https://www.geotattoos.com/blog/check/</link>
+      <link>http://localhost:1313/blog/check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/blog/check/</guid>
+      <guid>http://localhost:1313/blog/check/</guid>
       <description></description>
     </item>
     <item>
       <title>tatoo 2</title>
-      <link>https://www.geotattoos.com/blog/tatoo-2/</link>
+      <link>http://localhost:1313/blog/tatoo-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/blog/tatoo-2/</guid>
+      <guid>http://localhost:1313/blog/tatoo-2/</guid>
       <description></description>
     </item>
     <item>
       <title>Tatoo 3</title>
-      <link>https://www.geotattoos.com/blog/tatoo-3/</link>
+      <link>http://localhost:1313/blog/tatoo-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/blog/tatoo-3/</guid>
+      <guid>http://localhost:1313/blog/tatoo-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tattoo making </title>
+      <link>http://localhost:1313/blog/tattoo-making/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tattoo-making/</guid>
       <description></description>
     </item>
   </channel>
