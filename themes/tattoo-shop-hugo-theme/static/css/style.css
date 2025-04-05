@@ -26,7 +26,7 @@ body {
   /* font-family: "Prata", serif; */
   font-family: "Changa", sans-serif;
 }
-.img-fluid {
+.img-fluid, img {
   max-width: 100%;
   height: auto;
 }
@@ -653,3 +653,71 @@ figcaption {
   }
 }
 
+/* .text-white{
+
+  color: #fff!important;
+}
+
+.card{
+  border-radius: 5px;
+  box-shadow: 1 8px 4px 0 rgba(148, 148, 148, 0.658);
+  
+}
+.hover-effect:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+} */
+
+.grid-masonry {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  }
+  @media (min-width: 768px) {
+    .grid-masonry {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+    }
+  }
+  @media (min-width: 992px) {
+    .grid-masonry {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    }
+  }
+  @media (min-width: 1200px) {
+    .grid-masonry {
+      grid-template-columns: repeat(6, 1fr); /* 6 columns on large desktops */
+    }
+  }
+
+.blog-gradient {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+.neumorphic-card {
+  border-radius: 20px;
+  background: #1c1c1c;
+  box-shadow: 8px 8px 16px #141414, -8px -8px 16px #242424;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.neumorphic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 20px #121212, -10px -10px 20px #262626;
+}
+
+.modal{
+  z-index: 10000000;
+}
+.modal-content{
+  position: relative;
+}
+.modal-header{
+  height: 10vh;
+  right: 0;
+  top: 0;
+  width: 100%;
+  &.fixed-top{
+    position: fixed;
+  }
+}
+.modal-body{
+  padding-top: 10vh;
+}

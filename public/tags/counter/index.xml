@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Counter on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>https://www.geotattoos.com/tags/counter/</link>
+    <link>http://localhost:1313/tags/counter/</link>
     <description>Recent content in Counter on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 Aug 2020 23:45:10 +0530</lastBuildDate>
-    <atom:link href="https://www.geotattoos.com/tags/counter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/counter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tattoos Made</title>
-      <link>https://www.geotattoos.com/counter/tattoos-made/</link>
+      <link>http://localhost:1313/counter/tattoos-made/</link>
       <pubDate>Sun, 16 Aug 2020 23:45:10 +0530</pubDate>
-      <guid>https://www.geotattoos.com/counter/tattoos-made/</guid>
+      <guid>http://localhost:1313/counter/tattoos-made/</guid>
       <description>&lt;p&gt;10000&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tattoos Removed</title>
-      <link>https://www.geotattoos.com/counter/tattoos-removed/</link>
+      <link>http://localhost:1313/counter/tattoos-removed/</link>
       <pubDate>Sun, 16 Aug 2020 23:45:07 +0530</pubDate>
-      <guid>https://www.geotattoos.com/counter/tattoos-removed/</guid>
+      <guid>http://localhost:1313/counter/tattoos-removed/</guid>
       <description>&lt;p&gt;1000&lt;/p&gt;</description>
     </item>
     <item>
       <title>Artists Trained</title>
-      <link>https://www.geotattoos.com/counter/artists-trained/</link>
+      <link>http://localhost:1313/counter/artists-trained/</link>
       <pubDate>Sun, 16 Aug 2020 23:45:05 +0530</pubDate>
-      <guid>https://www.geotattoos.com/counter/artists-trained/</guid>
+      <guid>http://localhost:1313/counter/artists-trained/</guid>
       <description>&lt;p&gt;30&lt;/p&gt;</description>
     </item>
     <item>
       <title>Products</title>
-      <link>https://www.geotattoos.com/counter/products/</link>
+      <link>http://localhost:1313/counter/products/</link>
       <pubDate>Sun, 16 Aug 2020 23:45:02 +0530</pubDate>
-      <guid>https://www.geotattoos.com/counter/products/</guid>
+      <guid>http://localhost:1313/counter/products/</guid>
       <description>&lt;p&gt;100&lt;/p&gt;</description>
     </item>
   </channel>

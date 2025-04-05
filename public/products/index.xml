@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Products on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>https://www.geotattoos.com/products/</link>
+    <link>http://localhost:1313/products/</link>
     <description>Recent content in Products on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 14 Aug 2020 16:17:53 +0530</lastBuildDate>
-    <atom:link href="https://www.geotattoos.com/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Tattoo Tool Kit</title>
-      <link>https://www.geotattoos.com/products/basic-tattoo-tool-kit/</link>
+      <link>http://localhost:1313/products/basic-tattoo-tool-kit/</link>
       <pubDate>Fri, 14 Aug 2020 16:17:53 +0530</pubDate>
-      <guid>https://www.geotattoos.com/products/basic-tattoo-tool-kit/</guid>
+      <guid>http://localhost:1313/products/basic-tattoo-tool-kit/</guid>
       <description>&lt;h2 id=&#34;basic-and-intermediate&#34;&gt;Basic and intermediate&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Two all-purpose tattoo machines for lining and a shading&lt;/li&gt;&#xA;&lt;li&gt;Digital power supply&lt;/li&gt;&#xA;&lt;li&gt;Foot switch&lt;/li&gt;&#xA;&lt;li&gt;Clip cord&lt;/li&gt;&#xA;&lt;li&gt;Needles -50&lt;/li&gt;&#xA;&lt;li&gt;Starbrite black ink (1 oz) - 1&lt;/li&gt;&#xA;&lt;li&gt;Practice skin -2&lt;/li&gt;&#xA;&lt;li&gt;Tracing paper - 5&lt;/li&gt;&#xA;&lt;li&gt;Tattoo Flash (Desinn) DVD&lt;/li&gt;&#xA;&lt;li&gt;Rubber parts&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel Grip - 2&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel Tips - 2&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel Tube&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Intermediate Tattoo Tool Kit</title>
-      <link>https://www.geotattoos.com/products/intermediate-tattoo-tool-kit/</link>
+      <link>http://localhost:1313/products/intermediate-tattoo-tool-kit/</link>
       <pubDate>Fri, 14 Aug 2020 16:17:44 +0530</pubDate>
-      <guid>https://www.geotattoos.com/products/intermediate-tattoo-tool-kit/</guid>
+      <guid>http://localhost:1313/products/intermediate-tattoo-tool-kit/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Tattoo Tool Kit</title>
-      <link>https://www.geotattoos.com/products/machine-tattoo-tool-kit/</link>
+      <link>http://localhost:1313/products/machine-tattoo-tool-kit/</link>
       <pubDate>Fri, 14 Aug 2020 16:17:12 +0530</pubDate>
-      <guid>https://www.geotattoos.com/products/machine-tattoo-tool-kit/</guid>
+      <guid>http://localhost:1313/products/machine-tattoo-tool-kit/</guid>
       <description>&lt;h2 id=&#34;machine-and-professional&#34;&gt;Machine and professional&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Strong Alloy carrying case&lt;/li&gt;&#xA;&lt;li&gt;Handmade tattoo liner machine&lt;/li&gt;&#xA;&lt;li&gt;One Economy shading machine&lt;/li&gt;&#xA;&lt;li&gt;One Economy multipurpose machine&lt;/li&gt;&#xA;&lt;li&gt;Cyclone/Mercury power supply&lt;/li&gt;&#xA;&lt;li&gt;Round Foot switch&lt;/li&gt;&#xA;&lt;li&gt;Clip cord&lt;/li&gt;&#xA;&lt;li&gt;6, 1oz starBrite tattoo ink bottles&lt;/li&gt;&#xA;&lt;li&gt;100 - ink caps&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel ink cap holder&lt;/li&gt;&#xA;&lt;li&gt;50 Assorted needles&lt;/li&gt;&#xA;&lt;li&gt;Tracing paper - 5&lt;/li&gt;&#xA;&lt;li&gt;50 Pouches/5 Tubes- A and D Pouches&lt;/li&gt;&#xA;&lt;li&gt;stencil stuff 1oz&lt;/li&gt;&#xA;&lt;li&gt;Rubber parts&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel Grips - 4&lt;/li&gt;&#xA;&lt;li&gt;Stainless Steel Tubes - 4&lt;/li&gt;&#xA;&lt;li&gt;20 Disposable tips or 8 stainless steel Tips&lt;/li&gt;&#xA;&lt;li&gt;Green Soap&lt;/li&gt;&#xA;&lt;li&gt;Tattoo Flash (Design) DVD&lt;/li&gt;&#xA;&lt;li&gt;Practice skins&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Professional Tattoo Tool Kit</title>
-      <link>https://www.geotattoos.com/products/professional-tattoo-tool-kit/</link>
+      <link>http://localhost:1313/products/professional-tattoo-tool-kit/</link>
       <pubDate>Fri, 14 Aug 2020 16:16:33 +0530</pubDate>
-      <guid>https://www.geotattoos.com/products/professional-tattoo-tool-kit/</guid>
+      <guid>http://localhost:1313/products/professional-tattoo-tool-kit/</guid>
       <description></description>
     </item>
   </channel>

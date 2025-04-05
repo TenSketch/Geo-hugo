@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LatestPics on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>https://www.geotattoos.com/latestpics/</link>
+    <link>http://localhost:1313/latestpics/</link>
     <description>Recent content in LatestPics on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 May 2024 14:56:00 +0000</lastBuildDate>
-    <atom:link href="https://www.geotattoos.com/latestpics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/latestpics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>latest-pics-7</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-7/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-7/</link>
       <pubDate>Wed, 22 May 2024 14:56:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-7/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-7/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-8</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-8/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-8/</link>
       <pubDate>Wed, 22 May 2024 14:56:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-8/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-8/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-5</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-5/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-5/</link>
       <pubDate>Tue, 21 May 2024 18:26:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-5/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-5/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-6</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-6/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-6/</link>
       <pubDate>Tue, 21 May 2024 18:26:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-6/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-6/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-1</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-1/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-1/</link>
       <pubDate>Sat, 11 May 2024 16:59:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-1/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-1/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-9</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-9/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-9/</link>
       <pubDate>Sat, 11 May 2024 16:59:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-9/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-9/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-2</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-2/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-2/</link>
       <pubDate>Thu, 11 Apr 2024 16:59:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-2/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-2/</guid>
       <description></description>
     </item>
     <item>
       <title>latest-pics-3</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-3/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-3/</link>
       <pubDate>Thu, 11 Apr 2024 15:33:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-3/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-3/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>latest-pics-4</title>
-      <link>https://www.geotattoos.com/latestpics/latest-pics-4/</link>
+      <link>http://localhost:1313/latestpics/latest-pics-4/</link>
       <pubDate>Thu, 11 Apr 2024 15:33:00 +0000</pubDate>
-      <guid>https://www.geotattoos.com/latestpics/latest-pics-4/</guid>
+      <guid>http://localhost:1313/latestpics/latest-pics-4/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
