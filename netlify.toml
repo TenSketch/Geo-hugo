@@ -28,3 +28,6 @@ HUGO_VERSION = "0.105.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[functions]
+  directory = "netlify/functions"
