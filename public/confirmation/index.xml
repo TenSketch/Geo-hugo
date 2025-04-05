@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Booking Confirmation on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>http://localhost:1313/confirmation/</link>
+    <link>https://www.geotattoos.com/confirmation/</link>
     <description>Recent content in Booking Confirmation on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/confirmation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.geotattoos.com/confirmation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
