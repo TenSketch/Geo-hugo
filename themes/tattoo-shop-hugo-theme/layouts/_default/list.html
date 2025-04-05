@@ -17,12 +17,12 @@
 {{end}}
 
 {{define "content"}}
-<section class="blog bg-black">
+<!-- <section class="blog bg-black">
     <div class="container">
         <div class="row">
             {{range $index, $val := .Site.Taxonomies.tags.blog}}
             <div class="col-md-4">
-                <img class="img-fluid" src="{{.Params.image}}" alt="{{.Name}}">
+                <img class="img-fluid" src="{{ .Params.image }}" alt="{{.Name}}">
             </div>
                 <div class="col-md-8">
                     <h1>{{.Title}}</h1>
@@ -31,7 +31,23 @@
             {{ end }}
         </div>
     </div>
-</section>
+</section> -->
+<section class="blog bg-black">
+    <div class="container">
+      {{ range where .Site.Pages "Section" "blog" }}
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">
+          </div>
+          <div class="col-md-8">
+            <h3>{{ .Description }}</h3>
+            <!-- <p>{{ .Summary }}</p> -->
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  
 <div class="container my-4 pb-5">
     <h1 class="text-dark py-5" style="color: black !important;">Latest Tattoo pictures</h1>
     <div class="row mb-5 pb-5">

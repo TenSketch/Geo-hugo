@@ -5,8 +5,8 @@ backend:
     - admin
     - editor
 # publish_mode: editorial_workflow
-media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "blog"
     label: "Blog"
@@ -25,24 +25,6 @@ collections:
           required: true,
           widget: "image",
           choose_url: true }
-
-      - { label: "Tags",
-          name: "tags",
-          default: ["blog"],
-          required: false,
-          widget: "list",
-          allow_add: false }
-          
-      - { label: "Upload Date",
-          name: "date",
-          required: false,
-          widget: "datetime" }
-          
-      - { label: "Draft",
-          name: "draft",
-          widget: "boolean",
-          default: false,
-          required: false }
           
   - name: "gallery" # Used in routes, e.g., /admin/collections/gallery
     label: "Latest Tattoos gallery" # Used in the UI
