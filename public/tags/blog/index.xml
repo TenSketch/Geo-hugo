@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
-    <link>https://www.geotattoos.com/blog/</link>
-    <description>Recent content in Blogs on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
+    <title>Blog on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</title>
+    <link>https://www.geotattoos.com/tags/blog/</link>
+    <description>Recent content in Blog on Geo Tattoos - Tattoo Making | Tattoo Removal | Tattoo Training | Tattoo Products</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 May 2024 09:12:26 +0530</lastBuildDate>
-    <atom:link href="https://www.geotattoos.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.geotattoos.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog1</title>
       <link>https://www.geotattoos.com/blog/blog1/</link>
